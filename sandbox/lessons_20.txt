@@ -1,0 +1,24 @@
+Создаем новый модуль для тестирования CRM системы.
+-Создаем католог для нового модуля addressbook-web-tests.-
+=
+Далее в каталог перемещаем конфиг сборщика и запускатель из предыдущего модуля sandbox,
+build.gradle и каталог запускателя gradle и файлы gradlew и gradlew.bat
+=
+Редактируем конфиг файл и устанавливаем след. зависимости
+    >>>>
+    apply plugin: 'java'
+    repositories{
+        mavenCetral()
+    }
+    dependencies{
+        compile 'org.testng:testng:6.9.10'
+    }
+    <<<<
+=
+Импортируем созданный модуль в ide в имеющий наш проект.
+file->project structure->modules->+->import module->addressbook-web-tests->
+build.gradle->в окне устанавливаем use auto-import и
+create directories for empty content roots automatically (система сама создаст все необходимые подкаталоги)
+
+
+
