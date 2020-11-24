@@ -1,0 +1,44 @@
+Создаем новый модуль для тестирования CRM системы.
+-Создаем католог для нового модуля addressbook-web-tests.-
+===
+Далее в каталог перемещаем конфиг сборщика и запускатель из предыдущего модуля sandbox,
+build.gradle и каталог запускателя gradle и файлы gradlew и gradlew.bat
+===
+Редактируем конфиг файл и устанавливаем след. зависимости
+    >>>>
+    apply plugin: 'java'
+    repositories{
+        mavenCetral()
+    }
+    dependencies{
+        compile 'org.testng:testng:6.9.10'
+    }
+    <<<<
+    Еще упущенный момент, что надо подключить тесты или в противном случае тесты не подключаются и получаем ошибку:
+        * What went wrong:
+        Execution failed for task ':test'.
+        > No tests found for given includes:
+    ---------------
+    test {
+    	useTestNG()
+    }
+    ---------------
+===
+Импортируем созданный модуль в ide в имеющий наш проект.
+file->project structure->modules->+->import module->addressbook-web-tests->
+build.gradle->в окне устанавливаем use auto-import и
+create directories for empty content roots automatically
+(система сама создаст все необходимые подкаталоги)
+В моем случае каталоги пришлось создавать в ручную.
+===
+Далее создаем пакет ru.stqa.pft.addressbook в папке java.
+===
+Далее установим расширение для браузера FireFox - Katalon Recorder.
+Теперь можем записать действия браузера.
+Протестируем создание группы пользователей в CRM системе http://addressbook/. После с расширения импортируем код теста в разрешении java+testNg.
+Корректируем  код, подключаем необходимые библиотеки и пробуем запускать тест.
+===
+
+
+
+
