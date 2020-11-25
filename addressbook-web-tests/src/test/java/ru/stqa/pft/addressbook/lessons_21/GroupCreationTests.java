@@ -1,11 +1,11 @@
-package ru.stqa.pft.addressbook;
+package ru.stqa.pft.addressbook.lessons_21;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -22,10 +22,7 @@ public class GroupCreationTests {
     driver = new FirefoxDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-  }
-  //
-  @Test
-  public void testGroupCreation() throws Exception {
+    //Logging in CRM
     driver.get("http://addressbook/");
     driver.findElement(By.name("user")).click();
     driver.findElement(By.name("user")).clear();
@@ -35,6 +32,10 @@ public class GroupCreationTests {
     driver.findElement(By.name("pass")).clear();
     driver.findElement(By.name("pass")).sendKeys("secret");
     driver.findElement(By.xpath("//input[@value='Login']")).click();
+  }
+  //
+  @Test
+  public void testGroupCreation() throws Exception {
     driver.findElement(By.linkText("groups")).click();
     driver.findElement(By.name("new")).click();
     driver.findElement(By.name("group_name")).click();
@@ -50,8 +51,19 @@ public class GroupCreationTests {
     driver.findElement(By.xpath("//div[@id='content']/div")).click();
     driver.findElement(By.linkText("group page")).click();
     driver.findElement(By.linkText("Logout")).click();
+  }
+
+  @AfterMethod
+  public void teardown(){
     //close browser
-    driver.quit();
+    try {
+      Thread.sleep(3000);
+      //driver.close();
+    }
+    catch (Exception e)    {
+      System.out.println("Caught message " + e.getMessage());
+      driver.close();
+    }
   }
 
 

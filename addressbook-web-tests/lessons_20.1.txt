@@ -14,6 +14,15 @@ build.gradle и каталог запускателя gradle и файлы gradl
         compile 'org.testng:testng:6.9.10'
     }
     <<<<
+    Еще упущенный момент, что надо подключить тесты или в противном случае тесты не подключаются и получаем ошибку:
+        * What went wrong:
+        Execution failed for task ':test'.
+        > No tests found for given includes:
+    ---------------
+    test {
+    	useTestNG()
+    }
+    ---------------
 ===
 Импортируем созданный модуль в ide в имеющий наш проект.
 file->project structure->modules->+->import module->addressbook-web-tests->
@@ -24,9 +33,12 @@ create directories for empty content roots automatically
 ===
 Далее создаем пакет ru.stqa.pft.addressbook в папке java.
 ===
-Далее установим расширение для браузера FireFox Katalon Recorder.
-Теперь можем записать действия для браузера.
-Протестируем создание группы пользователей в CRM системе
+Далее установим расширение для браузера FireFox - Katalon Recorder.
+Теперь можем записать действия браузера.
+Протестируем создание группы пользователей в CRM системе http://addressbook/. После с расширения импортируем код теста в разрешении java+testNg.
+Корректируем  код, подключаем необходимые библиотеки и пробуем запускать тест.
+===
+
 
 
 
