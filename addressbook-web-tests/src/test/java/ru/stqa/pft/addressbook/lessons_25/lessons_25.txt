@@ -1,0 +1,26 @@
+===
+++Выделяем специализированные классы - помощники++
+===
+Дробим класс applicationManager так как в нем содержится много методов которое можно и нужно разнести по отдельным классам чтобы не перегружать класс.
+===
+Главное правильно выделить методы, которые требуется перенести в отдельный класс.
+Таким образом выделим методы по работе с группой.
+===
+Для этого создадим отдельный класс GroupHelper.
+===
+В классе ApplicationManager укажем (ApplicationManager extends GroupHelper), после создадим класс GroupHelper и перенесем в него методы из класса ApplicationManager.
+        returnToGroupPage();
+        submitGroupCreation();
+        fillGroupForm(GroupData groupData);
+        initGroupCreation();
+        deleteSelectedGroups()
+        selectGroup()
+===
+После этого заменим наследование на делегирование. Во время переноса будет необходимо создать геттеры для объекта класса, который делегировали в результате того что объект имеет статус private.
+      - private SessionHelper sessionHelper;
+      - private NavigationHelper navigationHelper;
+      - private  GroupHelper groupHelper;
+===
+Даллее сделаем общий класс для классов помощников
+
+
