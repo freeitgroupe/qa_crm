@@ -1,0 +1,24 @@
++++Запуск тестов в разных браузера при помощи конструкций if else+++
+- FireFox, Chrome, IE.
+===
+Необходимо проделать ряд действий в ApplicationManager, а именно
+в метод init внести следующие условия ->
+
+if(browser == BrowserType.FIREFOX){
+
+      System.setProperty("webdriver.gecko.driver", "C:\\webdriver\\bin\\geckodriver.exe");
+      driver = new FirefoxDriver();
+
+    }else if(browser == BrowserType.CHROME){
+      System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\bin\\chromedriver.exe");
+      driver = new ChromeDriver();
+
+    }else if(browser == BrowserType.IE){
+      driver = new InternetExplorerDriver();
+}
+===
+Также перенесем определение типа драйвера в TestBase, и сделаем конструктор класса для ApplicationManager:
+public ApplicationManager(String browser) {
+    this.browser = browser;
+}
+и в класс добавим свойство  private String browser;
