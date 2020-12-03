@@ -5,7 +5,6 @@
 в метод init внести следующие условия ->
 
 if(browser == BrowserType.FIREFOX){
-
       System.setProperty("webdriver.gecko.driver", "C:\\webdriver\\bin\\geckodriver.exe");
       driver = new FirefoxDriver();
 
@@ -21,4 +20,4 @@ if(browser == BrowserType.FIREFOX){
 public ApplicationManager(String browser) {
     this.browser = browser;
 }
-и в класс добавим свойство  private String browser;
+и в класс добавим свойство  private String browser, для метода  ApplicationManager(String browser);
