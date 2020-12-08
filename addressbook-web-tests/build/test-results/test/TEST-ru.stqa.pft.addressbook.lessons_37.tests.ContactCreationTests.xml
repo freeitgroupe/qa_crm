@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.lessons_37.tests.ContactCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-08T11:12:11" hostname="lst-1" time="1.048">
+  <properties/>
+  <testcase name="testContactCreation" classname="ru.stqa.pft.addressbook.lessons_37.tests.ContactCreationTests" time="1.048"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 36461
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1607425928.324][WARNING]: This version of ChromeDriver has not been tested with Chrome version 87.
+дек 08, 2020 1:12:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+дек 08, 2020 1:12:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 87, so returning the closest version found: 86
+дек 08, 2020 1:12:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 87 of 86
+]]></system-err>
+</testsuite>

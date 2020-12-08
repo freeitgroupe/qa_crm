@@ -44,12 +44,13 @@ public class ApplicationManager {
     //System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\bin\\chromedriver.exe");
     //driver = new FirefoxDriver();
 
-
     baseUrl = "https://www.google.com/";
-    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     //Logging in CRM
-    driver.get("http://addressbook/");
+    //driver.get("http://addressbook/");
+    driver.get("http://localhost/addressbook/");
     groupHelper = new GroupHelper(driver);
+    contactHelper = new ContactHelper(driver);
     navigationHelper = new NavigationHelper(driver);
     sessionHelper = new SessionHelper(driver);
     sessionHelper.login("admin", "secret");
@@ -71,7 +72,9 @@ public class ApplicationManager {
   public GroupHelper getGroupHelper() {
     return groupHelper;
   }
-  public ContactHelper getContactHelper() {return contactHelper;  }
+  public ContactHelper getContactHelper() {
+    return contactHelper;
+  }
 
   public NavigationHelper getNavigationHelper() {
     return navigationHelper;

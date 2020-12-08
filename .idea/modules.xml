@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/qa_crm.iml" filepath="$PROJECT_DIR$/.idea/qa_crm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qa_crm.main.iml" filepath="$PROJECT_DIR$/.idea/modules/qa_crm.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qa_crm.test.iml" filepath="$PROJECT_DIR$/.idea/modules/qa_crm.test.iml" />
+    </modules>
+  </component>
+</project>

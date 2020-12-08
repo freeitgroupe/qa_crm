@@ -1,10 +1,14 @@
 package ru.stqa.pft.addressbook.lessons_35.appmanager;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 import ru.stqa.pft.addressbook.lessons_35.model.ContactData;
 
 public class ContactHelper extends HelperBase {
+
   public ContactHelper(WebDriver driver) {
     super(driver);
   }
@@ -12,6 +16,7 @@ public class ContactHelper extends HelperBase {
   /* Клик по кнопке создания контактов */
   public void initContactCreation() {
     click(By.linkText("add new"));
+    //click(By.name("groups"));
   }
 
   /* Клик по кнопке модификации контактов */
@@ -33,13 +38,20 @@ public class ContactHelper extends HelperBase {
   }
 
   /*Заполнение полей формы*/
-  public void fillContactForm(ContactData contactData) {
+  //boolean creation - параметр по которому понимаем, какой тест используется (создания контакта или модификация контакта)
+  public void fillContactForm(ContactData contactData, boolean creation) {
     type(By.name("firstname"), contactData.getFirstname());
     type(By.name("lastname"), contactData.getLastname());
+
+    if(creation){
+        //если используем тест создания  контактов чекаем поле группы
+        new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+    }else{
+        //проверяем на отсутствие поля new group в форме в случае теста модификации
+        Assert.assertFalse(isElementPresent(By.name("new group")));
+    }
+
   }
-
-
-
 
 
 }
