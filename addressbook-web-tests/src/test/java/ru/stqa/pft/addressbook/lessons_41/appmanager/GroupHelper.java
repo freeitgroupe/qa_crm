@@ -1,7 +1,7 @@
-package ru.stqa.pft.addressbook.lessons_40.appmanager;
+package ru.stqa.pft.addressbook.lessons_41.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import ru.stqa.pft.addressbook.lessons_40.model.GroupData;
+import ru.stqa.pft.addressbook.lessons_41.model.GroupData;
 
 public class GroupHelper extends HelperBase {
 
@@ -36,10 +36,9 @@ public class GroupHelper extends HelperBase {
     click(By.name("delete"));
   }
 
-  /* Выбор группы, а именно клик по указанному checkbox */
-  /* Также параметр индекс указывает на какой конкретно элемент  */
-  public void selectGroup(int index) {
-    driver.findElements(By.name("selected[]")).get(index).click();
+  /*Выбор группы, а именно клик по указанному checkbox */
+  public void selectGroup() {
+    click(By.name("selected[]"));
   }
 
   /*Клик по кнопке модификации группы*/

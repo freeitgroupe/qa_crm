@@ -1,8 +1,8 @@
-package ru.stqa.pft.addressbook.lessons_40.tests;
+package ru.stqa.pft.addressbook.lessons_41.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import ru.stqa.pft.addressbook.lessons_40.model.GroupData;
+import ru.stqa.pft.addressbook.lessons_41.model.GroupData;
 
 public class GroupCreationTests extends TestBase {
 

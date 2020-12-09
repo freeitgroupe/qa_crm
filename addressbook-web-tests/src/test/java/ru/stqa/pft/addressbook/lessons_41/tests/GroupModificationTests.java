@@ -1,8 +1,8 @@
-package ru.stqa.pft.addressbook.lessons_40.tests;
+package ru.stqa.pft.addressbook.lessons_41.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import ru.stqa.pft.addressbook.lessons_40.model.GroupData;
+import ru.stqa.pft.addressbook.lessons_41.model.GroupData;
 
 public class GroupModificationTests extends TestBase {
   @Test
@@ -14,7 +14,7 @@ public class GroupModificationTests extends TestBase {
     if(!app.getGroupHelper().isThereAGroup()){
       app.getGroupHelper().createGroup(new GroupData("test4", null, "test4"));
     }
-    app.getGroupHelper().selectGroup(before - 1);//Выбор группы (выбрали последний элемент)
+    app.getGroupHelper().selectGroup();//Выбор группы
     app.getGroupHelper().initGroupModification();//переход на страницу редактирования группы
     app.getGroupHelper().fillGroupForm(new GroupData("testModifName", "testModifHeader", "testModifTester"));//указываем еобходимые поля группы
     app.getGroupHelper().submitGroupModification();//отправка сохранений

@@ -1,8 +1,8 @@
-package ru.stqa.pft.addressbook.lessons_40.tests;
+package ru.stqa.pft.addressbook.lessons_41.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import ru.stqa.pft.addressbook.lessons_40.model.GroupData;
+import ru.stqa.pft.addressbook.lessons_41.model.GroupData;
 
 public class GroupDeletionTests extends TestBase {
 
@@ -15,7 +15,7 @@ public class GroupDeletionTests extends TestBase {
     if(!app.getGroupHelper().isThereAGroup()){
       app.getGroupHelper().createGroup(new GroupData("test4", null, "test4"));
     }
-    app.getGroupHelper().selectGroup(before - 1);//выбор группы (выбрали последний элемент)
+    app.getGroupHelper().selectGroup();//выбор группы
     app.getGroupHelper().deleteSelectedGroups();//удаление выбранной группы
     app.getGroupHelper().returnToGroupPage();//возвращаеися на страницу группы
     //количество групп после теста для создания группы

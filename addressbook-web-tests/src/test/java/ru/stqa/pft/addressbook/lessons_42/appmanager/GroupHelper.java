@@ -1,7 +1,11 @@
-package ru.stqa.pft.addressbook.lessons_40.appmanager;
+package ru.stqa.pft.addressbook.lessons_42.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import ru.stqa.pft.addressbook.lessons_40.model.GroupData;
+import org.openqa.selenium.WebElement;
+import ru.stqa.pft.addressbook.lessons_42.model.GroupData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class GroupHelper extends HelperBase {
 
@@ -36,8 +40,7 @@ public class GroupHelper extends HelperBase {
     click(By.name("delete"));
   }
 
-  /* Выбор группы, а именно клик по указанному checkbox */
-  /* Также параметр индекс указывает на какой конкретно элемент  */
+  /*Выбор группы, а именно клик по указанному checkbox */
   public void selectGroup(int index) {
     driver.findElements(By.name("selected[]")).get(index).click();
   }
@@ -67,5 +70,17 @@ public class GroupHelper extends HelperBase {
   /* Подсчитываем количество элементов со следующем именем "selected[]" и возвращаем их количество */
   public int getGroupCount(){
     return driver.findElements(By.name("selected[]")).size();
+  }
+
+  /* Получаем спписок групп */
+  public List<GroupData> getGroupList() {
+    List<GroupData> groups = new ArrayList<GroupData>();
+    List<WebElement> elements = driver.findElements(By.cssSelector("span.group"));
+    for (WebElement element : elements){
+      String name = element.getText();
+      GroupData group = new GroupData(name, null, null);
+      groups.add(group);
+    }
+    return groups;
   }
 }
