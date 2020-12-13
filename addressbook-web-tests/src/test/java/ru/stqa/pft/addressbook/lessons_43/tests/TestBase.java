@@ -1,9 +1,9 @@
-package ru.stqa.pft.addressbook.lessons_42.tests;
+package ru.stqa.pft.addressbook.lessons_43.tests;
 
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import ru.stqa.pft.addressbook.lessons_42.appmanager.ApplicationManager;
+import ru.stqa.pft.addressbook.lessons_43.appmanager.ApplicationManager;
 
 public class TestBase {
   //По факту создаем объект вспомогательного класса

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.lessons_44.tests.GroupModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-13T01:16:35" hostname="DESKTOP-5UIVN5C" time="3.468">
+  <properties/>
+  <testcase name="testGroupModification" classname="ru.stqa.pft.addressbook.lessons_44.tests.GroupModificationTests" time="3.468"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1607822183075	geckodriver	INFO	Listening on 127.0.0.1:21915
+1607822185274	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile5rU1jg"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607822192535	Marionette	INFO	Listening on port 49438
+1607822193055	Marionette	WARN	TLS certificate errors will be ignored for this session
+дек 13, 2020 3:16:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
