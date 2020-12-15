@@ -8,7 +8,7 @@ import ru.stqa.pft.addressbook.lessons_42.appmanager.ApplicationManager;
 public class TestBase {
   //По факту создаем объект вспомогательного класса
   //ApplicationManager(BrowserType.CHROME) - передаем тип драйвера который будем использовать при тесте
-  protected final ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
+  protected final ApplicationManager app = new ApplicationManager(BrowserType.FIREFOX);
 
   @BeforeClass
   public void setUp() throws Exception {
