@@ -1,0 +1,18 @@
++++ Как правильно запускать браузер +++
+Работаем с аннотациями к методам
+
+public void setUp() throws Exception {
+    app.init();
+  }
+
+  public void teardown(){
+      app.stop();
+    }
+  Аннотации: (уточнить работу каждой аннотации)
+ - @BeforeSuite
+ - @BeforeClass
+ - @BeforeMethod
+ Адаптируем класс TestBase для работы тестов в режиме @BeforeSuite
+
+
+

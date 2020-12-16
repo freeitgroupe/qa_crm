@@ -1,11 +1,10 @@
-package ru.stqa.pft.addressbook.lessons_47.tests;
+package ru.stqa.pft.addressbook.lessons_48.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import ru.stqa.pft.addressbook.lessons_47.model.GroupData;
+import ru.stqa.pft.addressbook.lessons_48.model.GroupData;
 
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public class GroupCreationTests extends TestBase {
@@ -26,32 +25,16 @@ public class GroupCreationTests extends TestBase {
     //Проверяем количество групп до и после создания теста
     Assert.assertEquals(after.size(), before.size() + 1);
 
-    //Находим максимальный идентификатор
-    //Первый метод
-    int max = 0;
-    for(GroupData g : after){
-      if(g.getId() > max){
-        max = g.getId();
-      }
-    }
-
+    before.add(group);
     //Сравнение при помощи вспомогательного объекта компаратора
     //Сравнивателб для двух объектов
-    Comparator<? super GroupData> byId = (Comparator<GroupData>) (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
+    Comparator<? super GroupData > byId = (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
 
-    //Находим максимальный идентификатор
-    //Второй метод с использование лямда выражения
-    int max1 = after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId();
-    group.setId(max1);
-    before.add(group);
-    //Сортировка списка
-    //Comparator<? super GroupData> byId = (g1, g2)->Integer.compare(g1.getId(), g2.getId());
     before.sort(byId);
     after.sort(byId);
 
     //преобразовали списки before и after в множества (неопорядчные списки)
     Assert.assertEquals(before, after);
-
-
+    
   }
 }
