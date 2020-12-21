@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.lessons_45.model.GroupData;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 
@@ -25,9 +26,27 @@ public class GroupCreationTests extends TestBase {
     //Проверяем количество групп до и после создания теста
     Assert.assertEquals(after.size(), before.size() + 1);
 
+    //Находим максимальный идентификатор
+    int max = 0;
+    for(GroupData g : after){
+      if(g.getId() > max){
+        max = g.getId();
+      }
+    }
+
+    //Сравнение при помощи вспомогательного объекта компаратора
+    //Сравнивателб для двух объектов
+    Comparator<? super GroupData> byId = (Comparator<GroupData>) (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
+
+    int max1 = after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId();
+    group.setId(max1);
     before.add(group);
     //преобразовали списки before и after в множества (неопорядчные списки)
     Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
+
+
+
+
   }
 
 
