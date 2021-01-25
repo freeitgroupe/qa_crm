@@ -17,20 +17,11 @@ public class GroupCreationTests extends TestBase {
   //Тест для создания группы
   @Test
   public void testGroupCreation() throws Exception {
-    //переход а страницу группы
-    app.goTo().groupPage();
-
-    //список групп до создания теста
-    Groups before = app.group().all();
-
-    //Создадим переменную типа GroupData
-    GroupData group =  new GroupData().withName("test4");
-
-    //создание группы
-    app.group().create(group);
-
-    //Список групп
-    Groups after = app.group().all();
+    app.goTo().groupPage();//переход а страницу группы
+    Groups before = app.group().all();//список групп до создания теста
+    GroupData group =  new GroupData().withName("test4");//Создадим переменную типа GroupData
+    app.group().create(group); //создание группы
+    Groups after = app.group().all();//Список групп
 
     //Проверяем количество групп до и после создания теста
     Assert.assertEquals(after.size(), before.size() + 1);
