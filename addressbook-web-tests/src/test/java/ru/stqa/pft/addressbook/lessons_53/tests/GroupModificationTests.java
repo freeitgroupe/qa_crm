@@ -1,11 +1,17 @@
 package ru.stqa.pft.addressbook.lessons_53.tests;
 
+import org.hamcrest.CoreMatchers;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.lessons_53.model.GroupData;
+import ru.stqa.pft.addressbook.lessons_53.model.Groups;
 
 import java.util.Set;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertEquals;
 
 public class GroupModificationTests extends TestBase {
 
@@ -23,7 +29,7 @@ public class GroupModificationTests extends TestBase {
   public void testGroupModification() throws Exception{
     app.goTo().groupPage();//переход на страницу группы
     //список групп до создания теста
-    Set<GroupData> before = app.group().all();
+    Groups before = app.group().all();
     GroupData modifieGroup = before.iterator().next();
     GroupData group = new GroupData()
             .withId(modifieGroup.getId())
@@ -31,22 +37,11 @@ public class GroupModificationTests extends TestBase {
             .withHeader( "testModifHeader")
             .withFooter("testModifTester");
     app.group().modify(group);
-
     //список групп после теста для создания группы
-    Set<GroupData> after = app.group().all();
-
+     Groups after = app.group().all();
     //Проверяем размер списка до и после создания теста
-    Assert.assertEquals(after.size(), before.size());
-
-    //удалили элемент из списка
-    before.remove(modifieGroup);
-
-    //добавили элемент в список
-    before.add(group);
-
-    Assert.assertEquals(before, after);
-
-
+    assertEquals(after.size(), before.size());
+    assertThat(after, equalTo(before.without(modifieGroup).withAdded(group)));
   }
 
 
