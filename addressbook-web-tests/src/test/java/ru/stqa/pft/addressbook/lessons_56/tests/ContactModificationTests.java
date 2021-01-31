@@ -9,13 +9,13 @@ public class ContactModificationTests extends TestBase {
     public void testContactModification(){
         app.goTo().gotoHomePage();
         //Проверка на наличие группы
-        if (!app.getContactHelper().isThereContact()){
-            app.getContactHelper().creationContact(new ContactData("test_name", "test_surname", "test4"), true);
+        if (!app.contact().isThereContact()){
+            //app.contact().creationContact(new ContactData("test_name", "test_surname", "test4"), true);
         }
-        app.getContactHelper().initContactModification();
-        app.getContactHelper().fillContactForm(new ContactData("test_name", "test_surname", null), false);
-        app.getContactHelper().submitContactModification();
-        app.getContactHelper().returnToHomePage();
+        app.contact().initContactModification();
+        //app.contact().fillContactForm(new ContactData("test_name", "test_surname", null), false);
+        app.contact().submitContactModification();
+        app.contact().returnToHomePage();
     }
 }
 

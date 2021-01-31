@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.BrowserType;
 
 import java.util.concurrent.TimeUnit;
@@ -38,12 +39,14 @@ public class ApplicationManager {
       System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\bin\\chromedriver.exe");
       ChromeOptions options = new ChromeOptions();
       options.addArguments("--no-sandbox");
-
       driver = new ChromeDriver(options);
 
     }else if(browser.equals(BrowserType.IE)){
       //Если путь драйвера не указывать тогда драйвера надо поместить в системную папку, путь к которой прописан в системемную переменную PATH используя переменные среды системы
       driver = new InternetExplorerDriver();
+    }else if(browser.equals(BrowserType.OPERA)){
+      System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\bin\\operadriver.exe");
+      driver = new ChromeDriver();
     }
 
     //System.setProperty("webdriver.gecko.driver", "C:\\webdriver\\bin\\geckodriver.exe");
@@ -81,7 +84,8 @@ public class ApplicationManager {
     return groupHelper;
   }
 
-  public ContactHelper getContactHelper() {
+
+  public ContactHelper contact() {
     return contactHelper;
   }
 

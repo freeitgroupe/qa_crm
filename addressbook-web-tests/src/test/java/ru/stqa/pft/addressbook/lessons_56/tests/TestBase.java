@@ -10,6 +10,7 @@ public class TestBase {
   //ApplicationManager(BrowserType.CHROME) - передаем тип драйвера который будем использовать при тесте
   protected static final ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
 
+
   @BeforeMethod
   public void setUp() throws Exception {
     app.init();
