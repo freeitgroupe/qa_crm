@@ -55,8 +55,8 @@ public class ApplicationManager {
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     //Logging in CRM
-    //driver.get("http://addressbook/");
-    driver.get("http://localhost/addressbook/");
+    driver.get("http://addressbook/");
+    //driver.get("http://localhost/addressbook/");
     //driver.get("https://kolesa.kz/");
     //driver.get("https://www.bet365.com/");
     groupHelper = new GroupHelper(driver);

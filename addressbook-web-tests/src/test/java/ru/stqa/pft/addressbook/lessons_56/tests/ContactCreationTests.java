@@ -24,11 +24,12 @@ public class ContactCreationTests extends TestBase {
     assertThat(contact.getWorkPhone(), equalTo(cleaned(contactInfoFromEditForm.getWorkPhone())));
   }
 
-  /*Очищаем номер телефона от сторонних символов а именно "()", "-", "[space]"  */
-  /* replaceAll("\\s","") - убираем пробелы
+  /* Очищаем номер телефона от сторонних символов а именно "()", "-", "[space]"
+  *  replaceAll("\\s","") - убираем пробелы
   *  replaceAll("[-()]","") - убираем скобки и тире.
   *  */
-  public String cleaned(String phone)  {    return phone.replaceAll("\\s","").replaceAll("[-()]","");
+  public String cleaned(String phone)  {
+    return phone.replaceAll("\\s","").replaceAll("[-()]","");
   }
 
 }
