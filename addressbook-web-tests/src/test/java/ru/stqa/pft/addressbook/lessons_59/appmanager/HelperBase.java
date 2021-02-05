@@ -40,7 +40,7 @@ public class HelperBase {
     }
   }
 
-  protected void attach(By locator, File file) {
+  public void attach(By locator, File file) {
     //если text = !null, тогда переходим к заполнению полей.
     if(file != null){
         driver.findElement(locator).sendKeys(file.getAbsolutePath());

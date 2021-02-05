@@ -34,11 +34,13 @@ public class ContactPhoneTests extends TestBase {
                 .collect(Collectors.joining("\n"));
     }
 
-    /* Clearing data from "()", "-", "[space]"  */
-    /*  replaceAll("\\s","") - clearing from space
+     /* Clearing data from "()", "-", "[space]"
+     *  replaceAll("\\s","") - clearing from space
      *  replaceAll("[-()]","") - clearing data from oval brackets and dash.
      *  */
     private static String cleaned(String phone)  {
-        return phone.replaceAll("\\s","").replaceAll("[-()]","");
+        return phone
+                .replaceAll("\\s","")
+                .replaceAll("[-()]","");
     }
 }
