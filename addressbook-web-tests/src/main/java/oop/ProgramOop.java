@@ -1,6 +1,9 @@
 package oop;
 
 import oop.stuff.Person;
+import oop.graph.*;
+
+import java.nio.channels.Pipe;
 
 public class ProgramOop {
 
@@ -26,10 +29,35 @@ public class ProgramOop {
     px.show(); //
     */
 
-    Person p1 = new Person("Name for man 1", 40);
-    Person p2 = new Person();
-    p1.show(); // this == p1
-    p2.show(); // this == p2
+    // Обращаемся к коунтеру класса percent
+    //System.out.printf("Total persons: %d\n", Person.counter );
+
+    //Обращаемся к статическому методу класса person
+    Person.showCounter();
+
+    //Person p1 = Person.create("name for man 1", 40);
+
+    //Person p1 = new Person("Name for man 1", 40);
+    //Person p2 = new Person();
+    //Person px = new Person();
+
+
+    //p1.show(); // this == p1;
+    //p2.show(); // this == p2
+    //px.show(); //
+
+    //Person.showAll();
+
+    //System.out.printf("Total persons: %d\n", Person.counter );
+    //Person.showCounter();
+
+    /*
+    * Работа с пакетом graph
+    * */
+    {
+      Point p1 = new Point(10, 20);
+      p1.draw();
+    }
 
   }
 
