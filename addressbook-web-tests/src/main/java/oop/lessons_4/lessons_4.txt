@@ -1,0 +1,9 @@
+//==Инкапсуляция==//
+Модификаторы доступа
+
+Modifier    Access level    Visibility
+public      public          world (всем доступно)
+            package         this package only (доступно только внутри пакета и import не поможет)
+private     private         this class only (доступно только внутри класса)
+protected   protected       this class, this package, subclass
+
