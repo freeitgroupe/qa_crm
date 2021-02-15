@@ -2,14 +2,33 @@ package oop.lessons_4.graph;
 
 import org.checkerframework.checker.signature.qual.IdentifierOrPrimitiveType;
 
-public class Circle extends Shape {
+import java.io.Serializable;
+
+
+public class Circle extends Shape implements Scaleable, Serializable, Moveble {
+
     public int x;
     public int y;
     private int r;
 
+    public int getY() {
+        return y;
+    }
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+    public void setX(int x) {
+        this.x = x;
+    }
+
     public int getR(){
         return r;
     }
+
     public int setR(int r){
         if(r > 0 )
            return this.r = r;
@@ -28,6 +47,10 @@ public class Circle extends Shape {
     public void scale(double factor){
         r = (int)(factor * r );
         setR((int)(factor * getR()));
+    }
+
+    public void scale(){
+        scale(Scaleable.DEFAULT_FACTOR);
     }
 
     @Override

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 * Супер класс,  некая графическая фигура.
 * Если класс final, тогда от него нельзя унаследовться
 * */
-public /*final*/ class Shape {
+public /*final*/ abstract class Shape {
   public String color;
   // Наша сцена
   static ArrayList<Shape> scene = new ArrayList<>();
@@ -29,6 +29,17 @@ public /*final*/ class Shape {
         for(Shape s : scene){
           s.draw();
         }
+    }
+
+    public static void scaleScene(double factor){
+      for(Shape s : scene){
+        // bad
+        if(s instanceof Scaleable){
+          Scaleable sc = (Scaleable)s;
+          sc.scale(factor);
+        }
+
+      }
     }
 
   /*

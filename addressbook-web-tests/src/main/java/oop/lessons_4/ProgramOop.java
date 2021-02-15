@@ -98,19 +98,27 @@ public class ProgramOop {
 
 
       Circle c1 = new Circle(100, 200, 50, "pink");
-        c1.scale(1.5);
+        //c1.scale(1.5);
         Shape s2 = c1;
-        c1.setR(5);
-
-        s2.draw();
+        //c1.setR(5);
+        //s2.draw();
 
         if(s2 instanceof Point){  //false
             Point p3 = (Point) s2;
             p3.moveBy(2,1);
         }
 
-      Shape.drawScene();
+        Scaleable sc1 = c1;
 
+        //sc1.scale(1.5);
+
+
+      //System.out.println(Circle.DEFAULT_FACTOR);
+      System.out.println(Moveble.DEFAULT_FACTOR);
+      System.out.println(Scaleable.DEFAULT_FACTOR);
+      System.out.println(((Moveble)c1).DEFAULT_FACTOR);
+
+      //Shape.drawScene();
       //p1.draw();
       //p2.draw();
     }
