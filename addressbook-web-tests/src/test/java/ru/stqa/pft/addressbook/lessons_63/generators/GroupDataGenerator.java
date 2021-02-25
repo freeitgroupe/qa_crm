@@ -28,7 +28,7 @@ public class GroupDataGenerator {
       jCommander.parse(args);
     }catch (ParameterException ex){
       jCommander.usage();
-
+      return;
     }
     generator.run();
   }
@@ -38,12 +38,10 @@ public class GroupDataGenerator {
     save(groups, new File(file));
   }
 
-
   private void save(List<GroupData> groups, File file) throws IOException {
-
     Writer writer = new FileWriter(file);
     for(GroupData group : groups){
-      writer.write(String.format("%s;%s;%s;\n", group.getName(), group.getHeader(), group.getHeader()));
+      writer.write(String.format("%s;%s;%s;\n", group.getName(), group.getHeader(), group.getFooter() ));
     }
     writer.close();
   }
@@ -51,13 +49,13 @@ public class GroupDataGenerator {
   private List<GroupData> generateGroups(int count) {
     List<GroupData> groups = new ArrayList<GroupData>();
     for(int i=0; i < count; i++){
-      groups.add(new GroupData().withName(String.format("test %s", i))
-      .withHeader(String.format("header %s", i))
-              .withFooter(String.format("footer %s", i))
+      groups.add(new GroupData()
+                      .withName(String.format("test %s", i))
+                        .withHeader(String.format("header %s", i))
+                          .withFooter(String.format("footer %s", i))
       );
     }
     return groups;
   }
-
 
 }

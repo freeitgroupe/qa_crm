@@ -28,7 +28,6 @@ public class GroupDataGenerator {
       jCommander.parse(args);
     }catch (ParameterException ex){
       jCommander.usage();
-
     }
     generator.run();
   }
@@ -37,7 +36,6 @@ public class GroupDataGenerator {
     List<GroupData> groups = generateGroups(count);
     save(groups, new File(file));
   }
-
 
   private void save(List<GroupData> groups, File file) throws IOException {
     Writer writer = new FileWriter(file);

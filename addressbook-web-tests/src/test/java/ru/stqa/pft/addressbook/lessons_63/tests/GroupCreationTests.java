@@ -6,10 +6,11 @@ import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.lessons_63.model.GroupData;
 import ru.stqa.pft.addressbook.lessons_63.model.Groups;
 
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.Reader;
+import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -20,9 +21,24 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class GroupCreationTests extends TestBase {
 
   @DataProvider
-  public Iterator<Object[]> validGroups() throws FileNotFoundException {
+  public Iterator<Object[]> validGroups() throws IOException {
     List<Object[]> list = new ArrayList<Object[]>();
-    Reader reader = new FileReader(new File("src/test/resource/groups.csv"));
+    // BufferedReader - буферизирует прочитанные символы
+    try( BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.csv"))) ){
+      // читаем строку и переходим на следующую строку
+      String line = reader.readLine();
+      // Чтобы прочитать все строки, надо пройтись циклом по буферу с данными
+      while(line != null){
+        // Разбиваем строку на отдельные подстроки и формируем массив
+        String[] split =  line.split(";");
+        list.add(new Object[]{
+                new GroupData().withName(split[0]).withHeader(split[1]).withFooter(split[2])
+        });
+        line = reader.readLine();
+      }
+    }catch (IOException ex) {
+        System.err.format("IOException: %s%n", ex);
+      }
     return list.iterator();
   }
 

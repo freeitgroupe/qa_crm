@@ -39,7 +39,7 @@ public class Invoice {
   public class Line{
     private String good; // товар
     private double price; // цена на товар
-    private int quantity; //количество
+    private int quantity; // количество
     private double summa; // сумма по строке
 
       private void updateSumma(boolean isNew){

@@ -9,6 +9,8 @@ dependencies{
 	implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-7'
 	implementation 'org.hamcrest:java-hamcrest:2.0.0.0'
 	compile "com.beust:jcommander:1.71"
+	implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.8'
+
 }
 
 test {
