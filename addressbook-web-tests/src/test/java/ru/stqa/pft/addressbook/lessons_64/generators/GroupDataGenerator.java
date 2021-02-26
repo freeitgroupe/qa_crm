@@ -49,6 +49,7 @@ public class GroupDataGenerator {
     }
   }
 
+
   private void saveAsXml(List<GroupData> groups, File file) throws IOException {
     XStream xstream = new XStream();
     //xstream.alias("group",GroupData.class);
