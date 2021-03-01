@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1" >
     <test name="Groups" >
         <classes>
-            <class name="ru.stqa.pft.addressbook.lessons_67.tests.GroupCreationTests " />
+            <class name="ru.stqa.pft.addressbook.lessons_68.tests.GroupCreationTests" />
         </classes>
     </test>
 </suite>

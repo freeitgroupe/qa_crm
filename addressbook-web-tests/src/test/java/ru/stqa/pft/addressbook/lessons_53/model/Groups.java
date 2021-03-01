@@ -1,7 +1,7 @@
 package ru.stqa.pft.addressbook.lessons_53.model;
 
 import com.google.common.collect.ForwardingSet;
-import com.sun.jmx.remote.internal.ClientNotifForwarder;
+
 
 import java.util.HashSet;
 import java.util.Set;
