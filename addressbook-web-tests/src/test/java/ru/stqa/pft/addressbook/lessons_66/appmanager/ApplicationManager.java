@@ -37,8 +37,12 @@ public class ApplicationManager {
       //путь к драйверу в системе
       System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\bin\\chromedriver.exe");
       ChromeOptions options = new ChromeOptions();
-      options.addArguments("--no-sandbox");
-      driver = new ChromeDriver(options);
+      if(instance == null){
+        driver = new ChromeDriver(options);
+        instance = driver;
+      }else{
+        driver = instance;
+      }
 
     }else if(browser.equals(BrowserType.IE)){
       //Если путь драйвера не указывать тогда драйвера надо поместить в системную папку, путь к которой прописан в системемную переменную PATH используя переменные среды системы
