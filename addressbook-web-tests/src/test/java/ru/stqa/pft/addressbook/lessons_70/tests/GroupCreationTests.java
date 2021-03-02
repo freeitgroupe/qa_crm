@@ -1,15 +1,13 @@
-package ru.stqa.pft.addressbook.lessons_69.tests;
+package ru.stqa.pft.addressbook.lessons_70.tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.thoughtworks.xstream.XStream;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import ru.stqa.pft.addressbook.lessons_69.model.GroupData;
-import ru.stqa.pft.addressbook.lessons_69.model.Groups;
+import ru.stqa.pft.addressbook.lessons_70.model.GroupData;
+import ru.stqa.pft.addressbook.lessons_70.model.Groups;
 
 import java.io.BufferedReader;
 import java.io.File;

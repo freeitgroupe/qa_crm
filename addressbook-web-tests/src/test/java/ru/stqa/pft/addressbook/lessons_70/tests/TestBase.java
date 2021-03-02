@@ -1,17 +1,15 @@
-package ru.stqa.pft.addressbook.lessons_69.tests;
+package ru.stqa.pft.addressbook.lessons_70.tests;
 
 import org.openqa.selenium.remote.BrowserType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import ru.stqa.pft.addressbook.lessons_69.appmanager.ApplicationManager;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import ru.stqa.pft.addressbook.lessons_70.appmanager.ApplicationManager;
 
 import java.lang.reflect.Method;
-import java.sql.Array;
 import java.util.Arrays;
 
 public class TestBase {
