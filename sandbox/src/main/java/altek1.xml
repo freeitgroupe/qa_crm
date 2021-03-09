@@ -59,18 +59,18 @@
 Захист та лічильники</category>
 </categories>
 <offers>
-<offer available="true" group_id="1557" id="2111138">
-<url>https://altek.ua/ua/geliosistemy/baki-dlya-nagreva-vody/vodonagrevatel-altek-abd-b-0200-s-dvumya-teploobmennikami</url>
-<price>14212.8</price>
-<currencyId>USD</currencyId>
-<categoryId>4333491</categoryId>
-<picture>https://altek.ua/image/catalog/products/baki/2111138/2111138_2.jpg</picture>
-<picture>https://altek.ua/image/catalog/products/baki/2111138/2111138_1.jpg</picture>
-<delivery>true</delivery>
-<quantity_in_stock>999</quantity_in_stock>
-<name>Водонагреватель ALTEK ABD-B-0200 с двумя теплообменниками</name>
-<vendor>ALTEK</vendor>
-</offer>
+    <offer available="true" group_id="1557" id="2111138">
+        <url>https://altek.ua/ua/geliosistemy/baki-dlya-nagreva-vody/vodonagrevatel-altek-abd-b-0200-s-dvumya-teploobmennikami</url>
+        <price>14212.8</price>
+        <currencyId>USD</currencyId>
+        <categoryId>4333491</categoryId>
+        <picture>https://altek.ua/image/catalog/products/baki/2111138/2111138_2.jpg</picture>
+        <picture>https://altek.ua/image/catalog/products/baki/2111138/2111138_1.jpg</picture>
+        <delivery>true</delivery>
+        <quantity_in_stock>999</quantity_in_stock>
+        <name>Водонагреватель ALTEK ABD-B-0200 с двумя теплообменниками</name>
+        <vendor>ALTEK</vendor>
+    </offer>
 <offer available="true" group_id="1558" id="2111140">
 <url>https://altek.ua/ua/geliosistemy/baki-dlya-nagreva-vody/vodonagrevatel-altek-abd-0500-s-dvumya-teploobmennikami</url>
 <price>27791.1</price>
