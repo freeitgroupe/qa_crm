@@ -35,8 +35,8 @@ public class ExcelParse {
       Iterator<Row> rowIterator = sheet.iterator();    //доступ к строкам
       FormulaEvaluator evaluator = workbook.getCreationHelper().createFormulaEvaluator();
       int i = 0;
-      //FileWriter myWriter = new FileWriter("C:\\Users\\admin\\Desktop\\temp_files\\filename.txt");
-      FileWriter myWriter = new FileWriter("filename.txt");
+      FileWriter myWriter = new FileWriter("C:\\Users\\admin\\Desktop\\temp_files\\filename.txt");
+      //FileWriter myWriter = new FileWriter("filename.txt");
 
       DocumentBuilderFactory crunchifyDocBuilderFactory = DocumentBuilderFactory.newInstance();
       DocumentBuilder crunchifyDocBuilder;
@@ -45,7 +45,7 @@ public class ExcelParse {
       Element mainRootCategories = crunchifyDoc.createElementNS("Excel parser", "yml_catalog");
       crunchifyDoc.appendChild(mainRootCategories);
 
-      String oldWord="";
+      String oldWord = "";
       String firstWord = "";
       String lastNameOnlyText="";
       String newIdCat="";
@@ -64,13 +64,13 @@ public class ExcelParse {
           Cell cell = cellIterator.next();
           int rowIndex1 = cell.getColumnIndex();
           int rowIndex = cell.getRowIndex();
-          //Check the cell type after eveluating formulae
-          //If it is formula cell, it will be evaluated otherwise no change will happen
+          // Check the cell type after eveluating formulae
+          // If it is formula cell, it will be evaluated otherwise no change will happen
           Object res = evaluator.evaluateInCell(cell).getCellType();
 
           switch (evaluator.evaluateInCell(cell).getCellType())
           {
-            //*********
+            //**********
             case NUMERIC:
               if(rowIndex1 == 0){ // Если попадаем на id товара округляем до целого
                 productId = Math.round(cell.getNumericCellValue()) + "";
@@ -82,60 +82,58 @@ public class ExcelParse {
                 myWriter.write( productPrice + "\t");
                 break;
               }
-            //*********
+              //**********
             case STRING:
-              if(rowIndex1 == 0){//Если нулевая ячейка в строке и текст то это название категории
+              if(rowIndex1 == 0){ //Если нулевая ячейка в строке и текст то это название категории
                 if (cell.getStringCellValue().indexOf('.') > 0){ // также в названии должна быть точка
                   /* Осуществляем парсинг строки */
                   String firstStr= cell.getStringCellValue().replaceAll(" .*", "");
                   firstWord = cell.getStringCellValue().replaceAll("[.].*", "");
                   lastNameOnlyText = cell.getStringCellValue().replaceAll(firstStr, "").trim();
-                  //UUID.randomUUID().toString()
                   if(oldWord.equals(firstWord)){
                     //String firstWord1 = firstWord.replaceAll("[.].*", "");
                     newIdCat = "1" +i;
-                    mainRootCategories.appendChild(getCategory(crunchifyDoc,  newIdCat, lastNameOnlyText, parentIdCat));
-                    oldWord = firstWord;
+                    //mainRootCategories.appendChild(getCategory(crunchifyDoc,  newIdCat, lastNameOnlyText, parentIdCat));
                     rowCheckCategary = 1;
                     break;
                   }else{
                     //String firstWord1 = firstWord.replaceAll("[.].*", "");
                     newIdCat = "1" + i;
-                    parentIdCat = "";
-                    mainRootCategories.appendChild(getCategory(crunchifyDoc,  newIdCat, lastNameOnlyText,""));
+                    parentIdCat = newIdCat;
+                    //mainRootCategories.appendChild(getCategory(crunchifyDoc,  newIdCat, lastNameOnlyText,""));
                     oldWord = firstWord;
                     rowCheckCategary = 1;
                     break;
                   }
                 };
 
-              }else{// Если ячейка не нулевая то считываем даные наименования товара
+              }else{ // Если ячейка не нулевая то считываем даные наименования товара
                 productName = cell.getStringCellValue();
-                myWriter.write(productName + "\t");
+
+                if(productName != "" && productId != "" && productPrice != ""){
+                  // Node getProduct(Document doc, String productId, String productName, String productPrice)
+                  mainRootCategories.appendChild(getProduct(crunchifyDoc, productId , productName, productPrice,newIdCat, lastNameOnlyText, parentIdCat));
+                }
+
+                //myWriter.write(productName + "\t");
                 break;
               }
+              //**********
             case FORMULA:
               break;
           }
-          if(productName != "" && productId != "" && productPrice != ""){
-            //Node getProduct(Document doc, String productId, String productName, String productPrice)
-            mainRootCategories.appendChild(getProduct(crunchifyDoc, productId , productName, productPrice,newIdCat));
-          }
+
         }
-        //mainRootCategories.appendChild(getCategory(crunchifyDoc,  newIdCat, lastNameOnlyText, parentIdCat));
+        // mainRootCategories.appendChild(getCategory(crunchifyDoc,  newIdCat, lastNameOnlyText, parentIdCat));
         if( rowCheckCategary == 0){
-          //System.out.println();
+          // System.out.println();
           myWriter.write("\n");
         }
         i++;
       }
 
-
-
       file.close();
       myWriter.close();
-
-
 
       Transformer crunchifyTransformer = TransformerFactory.newInstance().newTransformer();
       crunchifyTransformer.setOutputProperty(OutputKeys.INDENT, "yes");
@@ -146,13 +144,11 @@ public class ExcelParse {
       crunchifyTransformer.transform(source, result);
       return;
 
-
-
     }catch(Exception e){
       System.out.println("Что то пошло не так");
     }
 
-    // Defines a factory API that enables applications to obtain a parser that produces DOM object trees from XML documents.
+    /*// Defines a factory API that enables applications to obtain a parser that produces DOM object trees from XML documents.
     DocumentBuilderFactory crunchifyDocBuilderFactory = DocumentBuilderFactory.newInstance();
 
     // Defines the API to obtain DOM Document instances from an XML document.
@@ -197,7 +193,7 @@ public class ExcelParse {
 
     } catch (TransformerException | ParserConfigurationException e) {
       e.printStackTrace();
-    }
+    }*/
 
   }
 
@@ -221,20 +217,28 @@ public class ExcelParse {
 
 
   private static Node getCategory(Document doc, String categoryId, String categoryName, String categoryParent) {
+    //Element crunchifyCat0 = doc.createElement("Categories");
     Element crunchifyCat = doc.createElement("Category");
     crunchifyCat.setAttribute("categoryId", categoryId);
     if (categoryParent != "") crunchifyCat.setAttribute("categoryParent", categoryParent);
-    crunchifyCat.appendChild(getCrunchifyCategoryElements(doc, crunchifyCat, "categoryName", categoryName));
+    crunchifyCat.appendChild(doc.createTextNode(categoryName));
+    //crunchifyCat.appendChild(getCrunchifyCategoryElements(doc, crunchifyCat, "categoryName", categoryName));
     return crunchifyCat;
   }
 
-  private static Node getProduct(Document doc, String productId, String productName, String productPrice,String categoryId) {
+  private static Node getProduct(Document doc, String productId, String productName, String productPrice,String categoryId, String categoryName, String categoryParentId) {
     Element crunchifyProd = doc.createElement("product");
     crunchifyProd.setAttribute("productId", productId);
+    crunchifyProd.setAttribute("productPrice", productPrice);
+    crunchifyProd.appendChild(doc.createTextNode(productName));
+    crunchifyProd.setAttribute("categoryId", categoryId);
+    crunchifyProd.setAttribute("categoryParentId", categoryParentId);
+    crunchifyProd.setAttribute("categoryName", categoryName);
+
     //if (categoryParent != "") crunchifyCat.setAttribute("categoryParent", categoryParent);
-    crunchifyProd.appendChild(getCrunchifyCategoryElements(doc, crunchifyProd, "productName", productName));
-    crunchifyProd.appendChild(getCrunchifyCategoryElements(doc, crunchifyProd, "priceName", productPrice));
-    crunchifyProd.appendChild(getCrunchifyCategoryElements(doc, crunchifyProd, "categoryId", categoryId));
+    //crunchifyProd.appendChild(getCrunchifyCategoryElements(doc, crunchifyProd, "productName", productName));
+    //crunchifyProd.appendChild(getCrunchifyCategoryElements(doc, crunchifyProd, "priceName", productPrice));
+    //crunchifyProd.appendChild(getCrunchifyCategoryElements(doc, crunchifyProd, "categoryId", categoryId));
     return crunchifyProd;
   }
 
