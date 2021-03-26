@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<yml_catalog>
+<Category categoryId="10">ETIMAT (Автоматичні вимикачі )</Category>
+<Category categoryId="11" categoryParent="10" parentNameCat="ETIMAT (Автоматичні вимикачі )">ETIMAT 4.5 (ST-68) (Автоматичні вимикачі АС_4,5кА)</Category>
+<Category categoryId="147" categoryParent="10" parentNameCat="ETIMAT (Автоматичні вимикачі )">ETIMAT 6 (Автоматичні вимикачі AC_6кА)</Category>
+<Category categoryId="1251" categoryParent="10" parentNameCat="ETIMAT (Автоматичні вимикачі )">ETIMAT 10 (Автоматичні вимикачі AC_10кА)</Category>
+<Category categoryId="1448" categoryParent="10" parentNameCat="ETIMAT (Автоматичні вимикачі )">ETIMAT P10/ETIMAT RC (Автоматичні вимикачі 10kA/AC)</Category>
+<Category categoryId="1751" categoryParent="10" parentNameCat="ETIMAT (Автоматичні вимикачі )">ETIMAT DC (Автоматичні вимикачі 6-10kA/DC)</Category>
+<Category categoryId="1944">EFI, KZS, DIFO (ПЗВ, диф.авт.вимикачі)</Category>
+<Category categoryId="1945" categoryParent="1944" parentNameCat="EFI, KZS, DIFO (ПЗВ, диф.авт.вимикачі)">Реле диференційні (ПЗВ) 2р, 4р EFI, EFI-P (тип AС)</Category>
+<Category categoryId="11047" categoryParent="1944" parentNameCat="EFI, KZS, DIFO (ПЗВ, диф.авт.вимикачі)">Реле диференційні (ПЗВ) 2р, 4р EFI, EFI-P, EFI-P NL, EFI-PR  (тип A)</Category>
+<Category categoryId="11200" categoryParent="1944" parentNameCat="EFI, KZS, DIFO (ПЗВ, диф.авт.вимикачі)">Блоки диф. реле DIFO</Category>
+<Category categoryId="11228" categoryParent="1944" parentNameCat="EFI, KZS, DIFO (ПЗВ, диф.авт.вимикачі)">Диф. автоматичні вимикачі KZS 1M SUP (верхнє підключ.)</Category>
+<Category categoryId="11265" categoryParent="1944" parentNameCat="EFI, KZS, DIFO (ПЗВ, диф.авт.вимикачі)">Диф. автоматичні вимикачі KZS-1M (нижнє підключ.)</Category>
+<Category categoryId="11302" categoryParent="1944" parentNameCat="EFI, KZS, DIFO (ПЗВ, диф.авт.вимикачі)">Диф. автоматичні вимикачі KZS-2M</Category>
+<Category categoryId="11366" categoryParent="1944" parentNameCat="EFI, KZS, DIFO (ПЗВ, диф.авт.вимикачі)">Диф. автоматичні вимикачі KZS-4M</Category>
+<Category categoryId="11398" categoryParent="1944" parentNameCat="EFI, KZS, DIFO (ПЗВ, диф.авт.вимикачі)">Диф. автоматичні вимикачі  KZS-AFDD</Category>
+<Category categoryId="11405">OSP-6 (Обмежувачі струму OSP-6_6kA)</Category>
+<Category categoryId="11425">EVESYS (Комутаційні пристрої)</Category>
+<Category categoryId="11492">EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)</Category>
+<Category categoryId="11493" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">RF-Control (система безпровідного управління електроприборами)</Category>
+<Category categoryId="11514" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Димери</Category>
+<Category categoryId="11519" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Сутінкові реле</Category>
+<Category categoryId="11526" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Реле часу (аналогові)+електромеханічні реле (добові таймери)</Category>
+<Category categoryId="11559" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Реле часу (цифрові)</Category>
+<Category categoryId="11573" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Імпульсні реле з функцією "пам'ять"</Category>
+<Category categoryId="11578" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Блоки живлення</Category>
+<Category categoryId="11586" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Контрольно-вимірювальні реле, індикатори наявності фаз</Category>
+<Category categoryId="11610" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Допоміжні реле (проміжні реле) модульні + у виконанні під цоколь(ERM &amp; MER &amp; RERM3)</Category>
+<Category categoryId="11669" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Реле контролю струму</Category>
+<Category categoryId="11679" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Реле контролю температури (термостати)+датчики</Category>
+<Category categoryId="11697" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Реле контролю рівня рідини+датчики</Category>
+<Category categoryId="11705" categoryParent="11492" parentNameCat="EVE - ETIREL  (Релейне обладнання, RF Control, ERM&amp;MER)">Сигнальні и комутаційні модулі USS</Category>
+<Category categoryId="11724">ETICONTROL (Програмовані логічні контролери. Контролер АВР. Аналізатори мережі)</Category>
+<Category categoryId="11738">ETIMETER (Аналізатори параметрів мережі. Конвертер. Трансформатори струму)</Category>
+<Category categoryId="11764">ETIHOMESWITCH (Електрофурнітура IP44/54 "Hermetics")</Category>
+<Category categoryId="11828">ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)</Category>
+<Category categoryId="11829" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Пластикові щити EC IP30</Category>
+<Category categoryId="11833" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Щити зовнішн. розподільчі ECT IP40</Category>
+<Category categoryId="11854" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Щити металопластикові ECT/ECM MEDIA IP40</Category>
+<Category categoryId="11901" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Щити внутр. розподільчі ECМ IP40</Category>
+<Category categoryId="11922" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Щити зовнішн. розподільчі ACTH/ACT IP40 IK07</Category>
+<Category categoryId="11932" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Аксесуари ECT/ECM/ECH/ECG IP40</Category>
+<Category categoryId="11939" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Щиты зовнішн. розподільчі ECH IP65</Category>
+<Category categoryId="11957" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Щити металопластикові ECG/ECG MEDIA/ECG COMBO IP40</Category>
+<Category categoryId="11997" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Щити металопластикові  ERP IP40</Category>
+<Category categoryId="12031" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Пластикові коробки SB IP66</Category>
+<Category categoryId="12051" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Шафи поліестерові армовані  KVR IP44</Category>
+<Category categoryId="12078" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Шафи поліестерові армовані  KVR IP54</Category>
+<Category categoryId="12210" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Шафа поліестерові EPC IP66</Category>
+<Category categoryId="12266" categoryParent="11828" parentNameCat="ETIBOX (Пластикові/металопластик. розпод. щити ECH, ECT/ECM, ECG/ERP, SB IP66, KVR, EPC)">Кабельні вводи метричні IP68</Category>
+<Category categoryId="12291">ETIBOX (Металеві шафи WRP &amp; GT &amp; GSX &amp; HXS)</Category>
+<Category categoryId="12292" categoryParent="12291" parentNameCat="ETIBOX (Металеві шафи WRP &amp; GT &amp; GSX &amp; HXS)">Щити металеві WRP IP30</Category>
+<Category categoryId="12305" categoryParent="12291" parentNameCat="ETIBOX (Металеві шафи WRP &amp; GT &amp; GSX &amp; HXS)">Металеві шафи GT IP66</Category>
+<Category categoryId="12382" categoryParent="12291" parentNameCat="ETIBOX (Металеві шафи WRP &amp; GT &amp; GSX &amp; HXS)">Металеві шафи SOLID GSX IP41/42/44 &amp; HXS IP65/55</Category>
+<Category categoryId="12779">ETIBOX EQ (шини, розпод.блоки, DIN-рейка)</Category>
+<Category categoryId="12910">ETICON - MS25_MPE 25_MSP (Автоматичні вимикачі захисту двигунів)</Category>
+<Category categoryId="13015">ETICON - RA, RD, R, R-R, RBS (Модульні та імпульсні контактори_АС1)</Category>
+<Category categoryId="13195">ETICON - CE, CEC, CEM, CES  (Силові контактори_АС3)</Category>
+<Category categoryId="13703">CP (Компоненти систем компенсації реактивної потужності)</Category>
+<Category categoryId="13837">ETISWITCH - CLBS, LBS, LBS CO, FLBS, MLBS (Вимикачі/перемикачі/роз'єднувачі навантаження)</Category>
+<Category categoryId="13838" categoryParent="13837" parentNameCat="ETISWITCH - CLBS, LBS, LBS CO, FLBS, MLBS (Вимикачі/перемикачі/роз'єднувачі навантаження)">CLBS Вимикачі навантаження "1-0"</Category>
+<Category categoryId="13912" categoryParent="13837" parentNameCat="ETISWITCH - CLBS, LBS, LBS CO, FLBS, MLBS (Вимикачі/перемикачі/роз'єднувачі навантаження)">LBS Вимикачі навантаження "1-0", перемикачі навантаження LBS CO "1-0-2" і аксесуари до них</Category>
+<Category categoryId="14009" categoryParent="13837" parentNameCat="ETISWITCH - CLBS, LBS, LBS CO, FLBS, MLBS (Вимикачі/перемикачі/роз'єднувачі навантаження)">FLBS Роз'єднувачі навантаження "1-0" під запобіжники</Category>
+<Category categoryId="14031" categoryParent="13837" parentNameCat="ETISWITCH - CLBS, LBS, LBS CO, FLBS, MLBS (Вимикачі/перемикачі/роз'єднувачі навантаження)">MLBS Перемикачі навантаження "1-0-2" з мотор-приводом</Category>
+<Category categoryId="14044">ETISWITCH - LAS/CO/P, LA/CO, LA MO CO, LAF (Вимикачі/перемикачі/роз'єднувачі навантаження)</Category>
+<Category categoryId="14045" categoryParent="14044" parentNameCat="ETISWITCH - LAS/CO/P, LA/CO, LA MO CO, LAF (Вимикачі/перемикачі/роз'єднувачі навантаження)">LAS малогабаритні роз'єднувачі навантаження "1-0" і LAS CO/P перемикачі навантаження "1-0-2"</Category>
+<Category categoryId="14090" categoryParent="14044" parentNameCat="ETISWITCH - LAS/CO/P, LA/CO, LA MO CO, LAF (Вимикачі/перемикачі/роз'єднувачі навантаження)">LA Роз'єднувачі навантаження "1-0" (рубильники з видимим розривом)</Category>
+<Category categoryId="14117" categoryParent="14044" parentNameCat="ETISWITCH - LAS/CO/P, LA/CO, LA MO CO, LAF (Вимикачі/перемикачі/роз'єднувачі навантаження)">LA CO Перемикачі навантаження "1-0-2"</Category>
+<Category categoryId="14133" categoryParent="14044" parentNameCat="ETISWITCH - LAS/CO/P, LA/CO, LA MO CO, LAF (Вимикачі/перемикачі/роз'єднувачі навантаження)">LA MO CO Перемикачі навантаження "1-0-2" с мотор-приводом</Category>
+<Category categoryId="14146" categoryParent="14044" parentNameCat="ETISWITCH - LAS/CO/P, LA/CO, LA MO CO, LAF (Вимикачі/перемикачі/роз'єднувачі навантаження)">LAF Роз'єднувачі навантаження  "1-0" під запобіжники</Category>
+<Category categoryId="14159" categoryParent="14044" parentNameCat="ETISWITCH - LAS/CO/P, LA/CO, LA MO CO, LAF (Вимикачі/перемикачі/роз'єднувачі навантаження)">Аксесуари до LAS, LAS CO/P, LA, LAF, LA CO, LA MO CO</Category>
+<Category categoryId="14247">ETISWITCH - CS пакетні (кулачкові) перемикачі</Category>
+<Category categoryId="14449">ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)</Category>
+<Category categoryId="14450" categoryParent="14449" parentNameCat="ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)">Промислові автоматичні вимикачі ETIBREAK 2S от 16A - 250A</Category>
+<Category categoryId="14577" categoryParent="14449" parentNameCat="ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)">Промислові автоматичні вимикачі ETIBREAK 2 (L - серія, економ)</Category>
+<Category categoryId="14604" categoryParent="14449" parentNameCat="ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)">Промислові автоматичні вимикачі ETIBREAK 2 (S - серія, стандарт)</Category>
+<Category categoryId="14620" categoryParent="14449" parentNameCat="ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)">Промислові автоматичні вимикачі ETIBREAK 2 (H - серія, висока)</Category>
+<Category categoryId="14633" categoryParent="14449" parentNameCat="ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)">Промислові автоматичні вимикачі ETIBREAK 2 (LE, E - серія с електронним розчіплювачем)</Category>
+<Category categoryId="14658" categoryParent="14449" parentNameCat="ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)">Промислові автоматичні вимикачі ETIBREAK 2 1000V AC</Category>
+<Category categoryId="14667" categoryParent="14449" parentNameCat="ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)">Аксесуари для промислових автоматичних вимикачів ETIBREAK 2 втичного виконання</Category>
+<Category categoryId="14696" categoryParent="14449" parentNameCat="ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)">Промислові автоматичні вимикачі з вбудованим блоком ПЗВ  ETIBREAK 2R</Category>
+<Category categoryId="14729" categoryParent="14449" parentNameCat="ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)">Вимикачі навантаження  ETIBREAK ED2</Category>
+<Category categoryId="14752" categoryParent="14449" parentNameCat="ETIBREAK (Промислові автоматичні вимикачі від 16А до 1600А і аксесуари до них)">Аксесуари до промислових автоматичних вимикачів серії ETIBREAK 2</Category>
+<Category categoryId="14902">ETICONNECT (Клеми електромонтажні)</Category>
+<Category categoryId="14903" categoryParent="14902" parentNameCat="ETICONNECT (Клеми електромонтажні)">Клеми гвинтові ESC,  аксесуари</Category>
+<Category categoryId="15050" categoryParent="14902" parentNameCat="ETICONNECT (Клеми електромонтажні)">Клеми пружинні ESP, аксесуари</Category>
+<Category categoryId="15124" categoryParent="14902" parentNameCat="ETICONNECT (Клеми електромонтажні)">Клеми пружинні ESH (push-in), аксесуари</Category>
+<Category categoryId="15159" categoryParent="14902" parentNameCat="ETICONNECT (Клеми електромонтажні)">Клеми гвинтові SM, аксесуари</Category>
+<Category categoryId="15297" categoryParent="14902" parentNameCat="ETICONNECT (Клеми електромонтажні)">Маркування (без нанесення), шильди</Category>
+<Category categoryId="15319" categoryParent="14902" parentNameCat="ETICONNECT (Клеми електромонтажні)">Маркування (з нанесенням)</Category>
+<Category categoryId="15339">ETITEC (Обмежувачі перенапруги, ПЗІП)</Category>
+<Category categoryId="15668">ETISIG (Світлосигнальна арматура, кнопки, перемикачі)</Category>
+<Category categoryId="15856">D (Низьковольтні циліндричні запобіжники / тримачі)</Category>
+<Category categoryId="15913">DO (Низьковольтні циліндричні запобіжники / тримачі / роз'єднувачі)</Category>
+<Category categoryId="15989">CH, CH-mini, EFD (Низьковольтні циліндричні запобіжники / тримачі / роз'єднувачі)</Category>
+<Category categoryId="16521">NH (Низьковольтні ножові запобіжники / тримачі)</Category>
+<Category categoryId="16522" categoryParent="16521" parentNameCat="NH (Низьковольтні ножові запобіжники / тримачі)">Запобіжники NH (характеристика gL/gG , 120kA, 500V)</Category>
+<Category categoryId="16673" categoryParent="16521" parentNameCat="NH (Низьковольтні ножові запобіжники / тримачі)">Запобіжники  NH (характеристика aM, 120kA, 690V)</Category>
+<Category categoryId="16720" categoryParent="16521" parentNameCat="NH (Низьковольтні ножові запобіжники / тримачі)">Запобіжники  NH/K с бойком (характеристика gL/gG, 100kA, 690V)</Category>
+<Category categoryId="16760" categoryParent="16521" parentNameCat="NH (Низьковольтні ножові запобіжники / тримачі)">Запобіжники NH (характеристика gTr, 100kA, 400V)</Category>
+<Category categoryId="16790" categoryParent="16521" parentNameCat="NH (Низьковольтні ножові запобіжники / тримачі)">Тримачі запобіжників NH</Category>
+<Category categoryId="16840" categoryParent="16521" parentNameCat="NH (Низьковольтні ножові запобіжники / тримачі)">Аксесуари до тримачів запобіжників NH</Category>
+<Category categoryId="16881">KVL, HVL, SL (Роз'єднувачі горизонтальні, вертикальні)</Category>
+<Category categoryId="16882" categoryParent="16881" parentNameCat="KVL, HVL, SL (Роз'єднувачі горизонтальні, вертикальні)">KVL, HVL (Роз'єднувачі горизонтальні)</Category>
+<Category categoryId="16966" categoryParent="16881" parentNameCat="KVL, HVL, SL (Роз'єднувачі горизонтальні, вертикальні)">SL (Роз'єднувачі вертикальні)</Category>
+<Category categoryId="16992">UQ (Надшвидкі запобіжники)</Category>
+<Category categoryId="16993" categoryParent="16992" parentNameCat="UQ (Надшвидкі запобіжники)">UQ NH (gS) ножові запобіжники для захисту частотних перетворювачів (aR+gL)</Category>
+<Category categoryId="17018" categoryParent="16992" parentNameCat="UQ (Надшвидкі запобіжники)">UQ серії CH (циліндричні запобіжники_10x38_14x51_22x58)</Category>
+<Category categoryId="17106" categoryParent="16992" parentNameCat="UQ (Надшвидкі запобіжники)">UQ серії D, D0</Category>
+<Category categoryId="17140" categoryParent="16992" parentNameCat="UQ (Надшвидкі запобіжники)">UQ тип NH (ножові запобіжники)</Category>
+<Category categoryId="17285" categoryParent="16992" parentNameCat="UQ (Надшвидкі запобіжники)">UQ серії BS</Category>
+<Category categoryId="17350" categoryParent="16992" parentNameCat="UQ (Надшвидкі запобіжники)">UQ тип G</Category>
+<Category categoryId="17475" categoryParent="16992" parentNameCat="UQ (Надшвидкі запобіжники)">UQ тип S</Category>
+<Category categoryId="17733">VV (Високовольтні запобіжники)</Category>
+<Category categoryId="18349">ETIBUSBAR  (Компоненти системи збірних шин 60мм)</Category>
+<Category categoryId="18456">ETICEE (Силові роз'єми і розподільчі щити з роз'ємами EDS)</Category>
+<Category categoryId="18457" categoryParent="18456" parentNameCat="ETICEE (Силові роз'єми і розподільчі щити з роз'ємами EDS)">Силові роз'єми</Category>
+<Category categoryId="18584" categoryParent="18456" parentNameCat="ETICEE (Силові роз'єми і розподільчі щити з роз'ємами EDS)">Розподільчі щити з роз'ємами EDS</Category>
+<Category categoryId="18611">ETIPOWER (Повітряні автоматичні вимикачі)</Category>
+<Category categoryId="18665">ETIDISS (Перетворювачі частоти та пристрої плавного пуску)</Category>
+<Category categoryId="18666" categoryParent="18665" parentNameCat="ETIDISS (Перетворювачі частоти та пристрої плавного пуску)">Перетворювачі частоти CFW-300</Category>
+<Category categoryId="18696" categoryParent="18665" parentNameCat="ETIDISS (Перетворювачі частоти та пристрої плавного пуску)">Перетворювачі частоти CFW-500</Category>
+<Category categoryId="18725" categoryParent="18665" parentNameCat="ETIDISS (Перетворювачі частоти та пристрої плавного пуску)">Перетворювачі частоти CFW-700</Category>
+<Category categoryId="18739" categoryParent="18665" parentNameCat="ETIDISS (Перетворювачі частоти та пристрої плавного пуску)">Перетворювачі частоти CFW-11</Category>
+<Category categoryId="18781" categoryParent="18665" parentNameCat="ETIDISS (Перетворювачі частоти та пристрої плавного пуску)">Пристрої плавного пуску SSW-07</Category>
+<Category categoryId="18812" categoryParent="18665" parentNameCat="ETIDISS (Перетворювачі частоти та пристрої плавного пуску)">Пристрої плавного пуску SSW-900</Category>
+<Category categoryId="18846">ETITRAFO (Трансформатори напруги)</Category>
+<Category categoryId="19055">SPF - SPECIAL PURPOSE FUSES (Запобіжники спеціального призначення)</Category>
+<Category categoryId="19056" categoryParent="19055" parentNameCat="SPF - SPECIAL PURPOSE FUSES (Запобіжники спеціального призначення)">Ножові запобіжники NH DC для ланцюгів постійного струму</Category>
+<Category categoryId="19105" categoryParent="19055" parentNameCat="SPF - SPECIAL PURPOSE FUSES (Запобіжники спеціального призначення)">Запобіжники CH, CH SU для захисту акуммуляторних батарей</Category>
+<Category categoryId="19174" categoryParent="19055" parentNameCat="SPF - SPECIAL PURPOSE FUSES (Запобіжники спеціального призначення)">Запобіжники NH, S для захисту акуммуляторних батарей</Category>
+<Category categoryId="19369" categoryParent="19055" parentNameCat="SPF - SPECIAL PURPOSE FUSES (Запобіжники спеціального призначення)">Запобіжники NH 800V</Category>
+<Category categoryId="19407" categoryParent="19055" parentNameCat="SPF - SPECIAL PURPOSE FUSES (Запобіжники спеціального призначення)">Запобіжники NH 1000V</Category>
+<Category categoryId="19422" categoryParent="19055" parentNameCat="SPF - SPECIAL PURPOSE FUSES (Запобіжники спеціального призначення)">Запобіжники TRB для захисту батарей електрокарів</Category>
+<Category categoryId="19435" categoryParent="19055" parentNameCat="SPF - SPECIAL PURPOSE FUSES (Запобіжники спеціального призначення)">Циліндричні запобіжники SRF для захисту ОПН категорій B, C (I і II ступені)</Category>
+<Category categoryId="19445">GREEN PROTECT (Компоненти для захисту фотоелектричних систем)</Category>
+</yml_catalog>

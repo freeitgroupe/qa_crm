@@ -50,6 +50,7 @@ public class ExcelParse {
       String lastNameOnlyText="";
       String newIdCat="";
       String parentIdCat = "";
+      String parentNameCat = "";
       String productId = "";
       String productName="";
       String productPrice="";
@@ -74,12 +75,17 @@ public class ExcelParse {
             case NUMERIC:
               if(rowIndex1 == 0){ // Если попадаем на id товара округляем до целого
                 productId = Math.round(cell.getNumericCellValue()) + "";
-                myWriter.write(productId + "\t");
+                //myWriter.write(productId + "\t");
                 break;
               }else{ //Если ячейка не нулевая в строке округляем до десятых
                 //System.out.printf("%.2f", cell.getNumericCellValue());
                 productPrice = String.format("%.2f",cell.getNumericCellValue());
-                myWriter.write( productPrice + "\t");
+                //myWriter.write( productPrice + "\t");
+
+                if(productName != "" && productId != "" && productPrice != ""){
+                  // Node getProduct(Document doc, String productId, String productName, String productPrice)
+                  //mainRootCategories.appendChild(getProduct(crunchifyDoc, productId , productName, productPrice,newIdCat, lastNameOnlyText, parentIdCat, parentNameCat));
+                }
                 break;
               }
               //**********
@@ -93,14 +99,15 @@ public class ExcelParse {
                   if(oldWord.equals(firstWord)){
                     //String firstWord1 = firstWord.replaceAll("[.].*", "");
                     newIdCat = "1" +i;
-                    //mainRootCategories.appendChild(getCategory(crunchifyDoc,  newIdCat, lastNameOnlyText, parentIdCat));
+                    mainRootCategories.appendChild(getCategory(crunchifyDoc,  newIdCat, lastNameOnlyText, parentIdCat, parentNameCat));
                     rowCheckCategary = 1;
                     break;
                   }else{
                     //String firstWord1 = firstWord.replaceAll("[.].*", "");
                     newIdCat = "1" + i;
                     parentIdCat = newIdCat;
-                    //mainRootCategories.appendChild(getCategory(crunchifyDoc,  newIdCat, lastNameOnlyText,""));
+                    parentNameCat = lastNameOnlyText;
+                    mainRootCategories.appendChild(getCategory(crunchifyDoc,  newIdCat, lastNameOnlyText,"",""));
                     oldWord = firstWord;
                     rowCheckCategary = 1;
                     break;
@@ -109,11 +116,6 @@ public class ExcelParse {
 
               }else{ // Если ячейка не нулевая то считываем даные наименования товара
                 productName = cell.getStringCellValue();
-
-                if(productName != "" && productId != "" && productPrice != ""){
-                  // Node getProduct(Document doc, String productId, String productName, String productPrice)
-                  mainRootCategories.appendChild(getProduct(crunchifyDoc, productId , productName, productPrice,newIdCat, lastNameOnlyText, parentIdCat));
-                }
 
                 //myWriter.write(productName + "\t");
                 break;
@@ -140,7 +142,7 @@ public class ExcelParse {
       DOMSource source = new DOMSource(crunchifyDoc);
       //StreamResult console = new StreamResult(System.out);
       //crunchifyTransformer.transform(source, console);
-      StreamResult result = new StreamResult(new File("ScoreDetail.xml"));
+      StreamResult result = new StreamResult(new File("ScoreDetail_new_cat.xml"));
       crunchifyTransformer.transform(source, result);
       return;
 
@@ -216,23 +218,28 @@ public class ExcelParse {
   }
 
 
-  private static Node getCategory(Document doc, String categoryId, String categoryName, String categoryParent) {
+  private static Node getCategory(Document doc, String categoryId, String categoryName, String categoryParent, String parentNameCat) {
     //Element crunchifyCat0 = doc.createElement("Categories");
     Element crunchifyCat = doc.createElement("Category");
     crunchifyCat.setAttribute("categoryId", categoryId);
-    if (categoryParent != "") crunchifyCat.setAttribute("categoryParent", categoryParent);
+    if (categoryParent != "") {
+      crunchifyCat.setAttribute("categoryParent", categoryParent);
+      crunchifyCat.setAttribute("parentNameCat", parentNameCat);
+
+    }
     crunchifyCat.appendChild(doc.createTextNode(categoryName));
     //crunchifyCat.appendChild(getCrunchifyCategoryElements(doc, crunchifyCat, "categoryName", categoryName));
     return crunchifyCat;
   }
 
-  private static Node getProduct(Document doc, String productId, String productName, String productPrice,String categoryId, String categoryName, String categoryParentId) {
+  private static Node getProduct(Document doc, String productId, String productName, String productPrice,String categoryId, String categoryName, String categoryParentId, String parentNameCat) {
     Element crunchifyProd = doc.createElement("product");
     crunchifyProd.setAttribute("productId", productId);
     crunchifyProd.setAttribute("productPrice", productPrice);
     crunchifyProd.appendChild(doc.createTextNode(productName));
     crunchifyProd.setAttribute("categoryId", categoryId);
     crunchifyProd.setAttribute("categoryParentId", categoryParentId);
+    crunchifyProd.setAttribute("parentNameCat", parentNameCat);
     crunchifyProd.setAttribute("categoryName", categoryName);
 
     //if (categoryParent != "") crunchifyCat.setAttribute("categoryParent", categoryParent);
