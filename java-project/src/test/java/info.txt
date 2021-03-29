@@ -1,4 +1,6 @@
+======================
 Инфраструктура.
+======================
     Среда разработки - IDEA
     Сборщик - Gradle
     Хранилище пакетов - Maven Central
@@ -187,7 +189,7 @@
         "div#main > p"                          "//div[@id = 'main']/p"
         "div#main li:first-child"               --/--/--
         "div#main li:last-child"                --/--/--
-        "div#header > div:nth-of-type(2)"       "//div[@id='main']/div[2]"
+        "div#main > div:nth-of-type(2)"       "//div[@id='main']/div[2]"
 
     * XPath мощнее чем CSS
         - Движение в любом направлении
@@ -276,4 +278,55 @@
 = Построение локаторов =
 ==============================
     * Устойчивы к изменениям верстки
+		- Максимально точные критерии выбора
+			можно протестить в консоле браузера для страницы сайта
+			$$("header .main-search [name='q']")
+			$x("//input[contains(@class, 'main-search-input') and @name='q']")
+		- Как можно меньше порядковых номеров
+		- Привязка к ближайшему уникальному элементу
+		- Минимум прыжков по DOM
+		
+===============================
+= Поиск при помощи JavaScript =
+===============================	
+	* Пример реализации класса
+		WebDriver driver = new AnyDriverYouWant();
+		JavascriptExecutor js;
+		if (driver instanceof JavascriptExecutor) {
+			js = (JavascriptExecutor)driver;
+		} else {
+			throw new IllegalStateException("This driver does not support JavaScript!");
+		}
 
+		// later on...
+		js.executeScript("return document.getElementById('someId');");
+	
+=======================
+= Свойства и атрибуты =
+=======================
+    * В дереве элементов DOM мы видим атрибуты
+	* В консоли браузера (Elements > колонка properties ), видем набор 
+	  свойств элементов так как каждый элемент дерева есть узел или объект 
+	  js который обладает определенным набором свойств
+	
+	* getAttribute - 
+		Возвращает значение свойств.
+		driver.findElement(By.id("keyPad_UserInput")).getAttribute("value")
+	* href, src - 
+		нормализация адресов (селениум возвращает адрес свойства)
+		driver.findElement(By.id("keyPad_UserInput")).getAttribute("href")
+	* true или null - 
+		булевские атрибуты. (если атрибут есть то селениум возвращает true)
+		Например атрибут select, чтобы он не содержал селениум вернет true
+		Всегда проверяйте что лежит в properties этого элемента.
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
