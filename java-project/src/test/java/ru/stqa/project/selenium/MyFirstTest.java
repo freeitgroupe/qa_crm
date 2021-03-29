@@ -41,7 +41,7 @@ public class MyFirstTest extends TestBase {
 
         System.out.println( ((HasCapabilities) driver).getCapabilities()  );
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 10);
+        //wait = new WebDriverWait(driver, 10);
     }
     */
 
