@@ -431,9 +431,9 @@
 		submit - отправляет форму или завершает заполнение поля.
 		(В стандарте не описана)
 		
-====================
-= Сложные действия =
-====================
+================================================
+= (Advanced Interactions API) Сложные действия =
+================================================
 	* Два подхода к действиям 
 		- обычные действия 
 			(click и sendKeys) "do what i mean".
@@ -443,9 +443,26 @@
 			"do what i say"
 			(click можно нажать и держать)
 	 
+	* Advanced Interactions API команды(небольшой список):
+		- click(clickAndHold + release)
+		- sendKeys (keyDown+keyUp)
+		- clickAndHold (удерживаение мыши)
+		- moveToElement/moveByOffset
+		- release (отпустить клавишу мыши)
+		- keyDown (нажатие клавиши)
+		- keyUp (возврат клавиши)
+		
+https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html		
 	 
-	 
-	 
+	* Пример перетаскивания эл-та с зажатой кнопкой ctrl.
+		new Actions(driver) // инициал. объект типа Actions
+		 .moveToElement(drag) // перем. мышь на эл. drag
+		 .keyDown(Keys.CONTROL) // нажать кн. CONTROL
+		 .clickAndHold() // нажать и удер. лев. кл. мыши
+		 .moveToElement(drop) // перем. мышь на эл. drop
+		 .release() // отпускаем к. мыши
+		 .keyUp(Keys.CONTROL) // отпускаем CTRL
+		 .perform() // Запускаем цепочку действий
 	 
 	 
 	 
