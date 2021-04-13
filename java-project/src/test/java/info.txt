@@ -463,15 +463,69 @@ https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/interactions
 		 .release() // отпускаем к. мыши
 		 .keyUp(Keys.CONTROL) // отпускаем CTRL
 		 .perform() // Запускаем цепочку действий
-	 
-	 
-	 
-	 
-	 
-	 
 	
+    * Пример клика по верхниму углу элемента
+		new Actions(driver)
+		 .moveToElement(el,1,1) //считает сдвиг отн. верхнего левого угла элемента
+		 .click()
+		 .perform();
+	 
+	* Пример клика по центру и смещение		
+		 new Actions(driver)
+		 .moveToElement(el) //перемещ. мыши к центру
+		 .moveByOffset(5,5) //cдвиг на указ расстояние
+		 .click()
+		 .perform();
+		 
+	* Пример клика по меню
+		 new Actions(driver)
+		 .moveToElement(menu)
+		 .moveToElement(submenu)
+		 .moveToElement(item)
+		 .click()
+		 .perform();
 	
+	* Пример dragAndDrop
+		new Actions(driver)
+		.dragAndDrop(el1, el2)
+		.perform();
+		
+=================================
+= Работа со сложными элементами =
+=================================	
+	* Работа с select как вариант:	https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/ui/Select.html
+	
+	* Пример заполнения календаря jquery (C#)
+		public void SetDatepicker(IWebDriver driver, string cssSelector, string date)
+			{
+				new WebDriverWait(driver, TimeSpan.FromSeconds(30)).Until<bool>(
+					d => driver.FindElement(By.CssSelector(cssSelector)).Displayed);
+				driver.FindElement(By.CssSelector(cssSelector)).SendKeys(date);
+			}
+
+	* Пример заполнения календаря jquery (C#) jQuery API
+		public void SetDatepicker(IWebDriver driver, string cssSelector, string date)
+			{
+				new WebDriverWait(driver, TimeSpan.FromSeconds(30)).Until<bool>(
+					d => driver.FindElement(By.CssSelector(cssSelector)).Displayed);
+				(driver as IJavaScriptExecutor).ExecuteScript(
+					String.Format("$('{0}').datepicker('setDate', '{1}')", cssSelector, date));
+			}
+	
+=======================
+= Невидимые элементы  =
+=======================
+	* Элементы можно сделать видимыми и работать с ними.
+	* Работать через driver.execute_script("arguments[0].selectedIndex = 3", select), работая с select и другими элементами. JavaScript помогает обойти некоторые ограничения.
+	
+================================
+= Ожидание появление элемента  =
+================================	
+    * Явное ожидание
+	WebDriver wait = new WebDriverWait(driver, 30);	
+	* Ожидание появление эл.та (лямда ф-я)
+	WebElement element = wait.until(d->d.findElement(locator));
+	 
 	
 
 
-	
