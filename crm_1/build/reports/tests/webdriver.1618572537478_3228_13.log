@@ -1,0 +1,977 @@
+[1618572538.813][INFO]: Starting OperaDriver 89.0.4389.82 (8d785cc4e2b89bff35f6a21710215271fb8fd782-refs/branch-heads/4389@{#1433}) on port 4129
+[1618572538.813][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping OperaDriver safe.
+[1618572539.809][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "operablink",
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "operablink",
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "operaOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1618572539.815][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1618572539.815][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1618572539.856][INFO]: Launching opera: "C:\Users\admin\AppData\Local\Programs\Opera\75.0.3969.171\opera.exe" --allow-elevated-browser --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-presto-profile-migration --disable-prompt-on-repost --disable-sync --disable-update --disable-usage-statistics-question --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-default-browser-check --no-first-run --no-service-autorun --password-store=basic --ran-launcher --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\admin\AppData\Local\Temp\scoped_dir6416_1797454921" data:,
+[1618572560.321][INFO]: resolved localhost to ["127.0.0.1"]
+[1618572560.566][INFO]: resolved localhost to ["127.0.0.1"]
+[1618572562.533][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE InitSession {
+   "acceptInsecureCerts": true,
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "opera",
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "goog:chromeOptions": {
+      "debuggerAddress": "localhost:62969"
+   },
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "opera": {
+      "operadriverVersion": "89.0.4389.82 (8d785cc4e2b89bff35f6a21710215271fb8fd782-refs/branch-heads/4389@{#1433})",
+      "userDataDir": "C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir6416_1797454921"
+   },
+   "pageLoadStrategy": "normal",
+   "platform": "Windows",
+   "proxy": {
+
+   },
+   "~~~": "..."
+}
+[1618572567.105][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND SendCommand {
+   "cmd": "Page.setDownloadBehavior",
+   "params": {
+      "behavior": "allow",
+      "downloadPath": "D:\\barancev\\qa_crm\\crm_1\\build\\downloads\\1618572536882_3228_13"
+   }
+}
+[1618572567.105][INFO]: Waiting for pending navigations...
+[1618572567.108][INFO]: Done waiting for pending navigations. Status: ok
+[1618572567.143][INFO]: Waiting for pending navigations...
+[1618572567.144][INFO]: Done waiting for pending navigations. Status: ok
+[1618572567.144][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE SendCommand
+[1618572567.396][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND SetWindowSize {
+   "handle": "current",
+   "height": 768,
+   "width": 1366,
+   "windowHandle": "current"
+}
+[1618572567.510][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE SetWindowSize
+[1618572567.516][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND SetTimeouts {
+   "ms": 30000,
+   "type": "page load"
+}
+[1618572567.516][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE SetTimeouts
+[1618572567.595][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND Navigate {
+   "url": "https://demoqa.com/automation-practice-form"
+}
+[1618572567.595][INFO]: Waiting for pending navigations...
+[1618572567.596][INFO]: Done waiting for pending navigations. Status: ok
+[1618572573.361][INFO]: Waiting for pending navigations...
+[1618572574.753][INFO]: Done waiting for pending navigations. Status: ok
+[1618572574.753][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE Navigate
+[1618572574.853][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#firstName"
+}
+[1618572574.854][INFO]: Waiting for pending navigations...
+[1618572574.854][INFO]: Done waiting for pending navigations. Status: ok
+[1618572574.874][INFO]: Waiting for pending navigations...
+[1618572574.874][INFO]: Done waiting for pending navigations. Status: ok
+[1618572574.874][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-1"
+}
+[1618572574.877][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-1"
+}
+[1618572574.877][INFO]: Waiting for pending navigations...
+[1618572574.878][INFO]: Done waiting for pending navigations. Status: ok
+[1618572574.892][INFO]: Waiting for pending navigations...
+[1618572574.892][INFO]: Done waiting for pending navigations. Status: ok
+[1618572574.892][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572574.900][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClearElement {
+   "id": "0.08552425667533825-1"
+}
+[1618572574.900][INFO]: Waiting for pending navigations...
+[1618572574.901][INFO]: Done waiting for pending navigations. Status: ok
+[1618572574.918][INFO]: 
+	=== NOTE: ===
+	The Clear command in OperaDriver 2.43 and above
+	has been updated to conform to the current standard,
+	including raising blur event after clearing.
+
+[1618572574.926][INFO]: Waiting for pending navigations...
+[1618572574.927][INFO]: Done waiting for pending navigations. Status: ok
+[1618572574.927][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClearElement
+[1618572574.931][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND TypeElement {
+   "id": "0.08552425667533825-1",
+   "value": [ "First Name" ]
+}
+[1618572574.931][INFO]: Waiting for pending navigations...
+[1618572574.932][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.011][INFO]: Waiting for pending navigations...
+[1618572575.021][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.021][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE TypeElement
+[1618572575.028][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#lastName"
+}
+[1618572575.028][INFO]: Waiting for pending navigations...
+[1618572575.029][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.036][INFO]: Waiting for pending navigations...
+[1618572575.036][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.036][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-3"
+}
+[1618572575.040][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-3"
+}
+[1618572575.040][INFO]: Waiting for pending navigations...
+[1618572575.040][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.048][INFO]: Waiting for pending navigations...
+[1618572575.048][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.048][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572575.052][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClearElement {
+   "id": "0.08552425667533825-3"
+}
+[1618572575.052][INFO]: Waiting for pending navigations...
+[1618572575.053][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.083][INFO]: Waiting for pending navigations...
+[1618572575.083][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.083][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClearElement
+[1618572575.086][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND TypeElement {
+   "id": "0.08552425667533825-3",
+   "value": [ "Last Name" ]
+}
+[1618572575.086][INFO]: Waiting for pending navigations...
+[1618572575.087][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.135][INFO]: Waiting for pending navigations...
+[1618572575.139][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.139][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE TypeElement
+[1618572575.143][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#userEmail"
+}
+[1618572575.143][INFO]: Waiting for pending navigations...
+[1618572575.144][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.150][INFO]: Waiting for pending navigations...
+[1618572575.152][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.152][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-4"
+}
+[1618572575.154][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-4"
+}
+[1618572575.154][INFO]: Waiting for pending navigations...
+[1618572575.157][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.164][INFO]: Waiting for pending navigations...
+[1618572575.164][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.164][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572575.168][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClearElement {
+   "id": "0.08552425667533825-4"
+}
+[1618572575.168][INFO]: Waiting for pending navigations...
+[1618572575.168][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.199][INFO]: Waiting for pending navigations...
+[1618572575.199][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.199][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClearElement
+[1618572575.204][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND TypeElement {
+   "id": "0.08552425667533825-4",
+   "value": [ "name@gmail.com" ]
+}
+[1618572575.204][INFO]: Waiting for pending navigations...
+[1618572575.207][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.263][INFO]: Waiting for pending navigations...
+[1618572575.267][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.267][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE TypeElement
+[1618572575.270][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(., 'Female') and contains(@class, 'custom-control')]"
+}
+[1618572575.270][INFO]: Waiting for pending navigations...
+[1618572575.270][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.279][INFO]: Waiting for pending navigations...
+[1618572575.280][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.280][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-5"
+}
+[1618572575.282][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-5"
+}
+[1618572575.282][INFO]: Waiting for pending navigations...
+[1618572575.282][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.290][INFO]: Waiting for pending navigations...
+[1618572575.292][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.292][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572575.295][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-5"
+}
+[1618572575.295][INFO]: Waiting for pending navigations...
+[1618572575.295][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.360][INFO]: Waiting for pending navigations...
+[1618572575.362][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.362][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement
+[1618572575.365][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#userNumber"
+}
+[1618572575.365][INFO]: Waiting for pending navigations...
+[1618572575.366][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.374][INFO]: Waiting for pending navigations...
+[1618572575.376][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.376][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-6"
+}
+[1618572575.384][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-6"
+}
+[1618572575.384][INFO]: Waiting for pending navigations...
+[1618572575.385][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.393][INFO]: Waiting for pending navigations...
+[1618572575.395][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.395][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572575.399][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClearElement {
+   "id": "0.08552425667533825-6"
+}
+[1618572575.399][INFO]: Waiting for pending navigations...
+[1618572575.400][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.428][INFO]: Waiting for pending navigations...
+[1618572575.430][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.430][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClearElement
+[1618572575.433][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND TypeElement {
+   "id": "0.08552425667533825-6",
+   "value": [ "0123456789" ]
+}
+[1618572575.433][INFO]: Waiting for pending navigations...
+[1618572575.433][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.552][INFO]: Waiting for pending navigations...
+[1618572575.553][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.553][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE TypeElement
+[1618572575.561][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#dateOfBirthInput"
+}
+[1618572575.561][INFO]: Waiting for pending navigations...
+[1618572575.561][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.568][INFO]: Waiting for pending navigations...
+[1618572575.569][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.569][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-8"
+}
+[1618572575.580][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-8"
+}
+[1618572575.580][INFO]: Waiting for pending navigations...
+[1618572575.580][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.588][INFO]: Waiting for pending navigations...
+[1618572575.590][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.591][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572575.593][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClearElement {
+   "id": "0.08552425667533825-8"
+}
+[1618572575.593][INFO]: Waiting for pending navigations...
+[1618572575.593][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.702][INFO]: Waiting for pending navigations...
+[1618572575.730][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.730][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClearElement
+[1618572575.734][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND TypeElement {
+   "id": "0.08552425667533825-8",
+   "value": [ "08 Apr 1988" ]
+}
+[1618572575.734][INFO]: Waiting for pending navigations...
+[1618572575.742][INFO]: Done waiting for pending navigations. Status: ok
+[1618572575.998][INFO]: Waiting for pending navigations...
+[1618572576.002][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.002][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE TypeElement
+[1618572576.006][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#subjectsContainer"
+}
+[1618572576.006][INFO]: Waiting for pending navigations...
+[1618572576.007][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.013][INFO]: Waiting for pending navigations...
+[1618572576.014][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.014][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-9"
+}
+[1618572576.044][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-9"
+}
+[1618572576.044][INFO]: Waiting for pending navigations...
+[1618572576.045][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.052][INFO]: Waiting for pending navigations...
+[1618572576.052][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.052][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572576.056][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-9"
+}
+[1618572576.056][INFO]: Waiting for pending navigations...
+[1618572576.056][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.104][INFO]: Waiting for pending navigations...
+[1618572576.108][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.108][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement
+[1618572576.112][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".subjects-auto-complete__input input"
+}
+[1618572576.112][INFO]: Waiting for pending navigations...
+[1618572576.113][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.120][INFO]: Waiting for pending navigations...
+[1618572576.120][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.120][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-10"
+}
+[1618572576.126][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-10"
+}
+[1618572576.126][INFO]: Waiting for pending navigations...
+[1618572576.126][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.134][INFO]: Waiting for pending navigations...
+[1618572576.134][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.134][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572576.137][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClearElement {
+   "id": "0.08552425667533825-10"
+}
+[1618572576.137][INFO]: Waiting for pending navigations...
+[1618572576.138][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.166][INFO]: Waiting for pending navigations...
+[1618572576.166][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.166][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClearElement
+[1618572576.169][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND TypeElement {
+   "id": "0.08552425667533825-10",
+   "value": [ "subjects" ]
+}
+[1618572576.169][INFO]: Waiting for pending navigations...
+[1618572576.169][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.225][INFO]: Waiting for pending navigations...
+[1618572576.245][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.245][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE TypeElement
+[1618572576.258][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(., 'Sport') and contains(@class, 'custom-control')]"
+}
+[1618572576.258][INFO]: Waiting for pending navigations...
+[1618572576.259][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.267][INFO]: Waiting for pending navigations...
+[1618572576.268][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.268][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-11"
+}
+[1618572576.272][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-11"
+}
+[1618572576.272][INFO]: Waiting for pending navigations...
+[1618572576.273][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.285][INFO]: Waiting for pending navigations...
+[1618572576.285][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.285][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572576.292][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-11"
+}
+[1618572576.292][INFO]: Waiting for pending navigations...
+[1618572576.293][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.350][INFO]: Waiting for pending navigations...
+[1618572576.354][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.354][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement
+[1618572576.364][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(., 'Reading') and contains(@class, 'custom-control')]"
+}
+[1618572576.364][INFO]: Waiting for pending navigations...
+[1618572576.365][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.374][INFO]: Waiting for pending navigations...
+[1618572576.375][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.375][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-12"
+}
+[1618572576.377][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-12"
+}
+[1618572576.377][INFO]: Waiting for pending navigations...
+[1618572576.378][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.387][INFO]: Waiting for pending navigations...
+[1618572576.387][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.387][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572576.391][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-12"
+}
+[1618572576.391][INFO]: Waiting for pending navigations...
+[1618572576.392][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.441][INFO]: Waiting for pending navigations...
+[1618572576.442][INFO]: Done waiting for pending navigations. Status: ok
+[1618572576.442][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement
+[1618572589.830][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572589.830][INFO]: Waiting for pending navigations...
+[1618572589.831][INFO]: Done waiting for pending navigations. Status: ok
+[1618572589.839][INFO]: Waiting for pending navigations...
+[1618572589.840][INFO]: Done waiting for pending navigations. Status: ok
+[1618572589.840][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572589.843][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572589.843][INFO]: Waiting for pending navigations...
+[1618572589.843][INFO]: Done waiting for pending navigations. Status: ok
+[1618572589.852][INFO]: Waiting for pending navigations...
+[1618572589.853][INFO]: Done waiting for pending navigations. Status: ok
+[1618572589.853][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572589.862][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572589.862][INFO]: Waiting for pending navigations...
+[1618572589.863][INFO]: Done waiting for pending navigations. Status: ok
+[1618572589.875][INFO]: Waiting for pending navigations...
+[1618572589.876][INFO]: Done waiting for pending navigations. Status: ok
+[1618572589.876][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572590.128][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572590.128][INFO]: Waiting for pending navigations...
+[1618572590.129][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.133][INFO]: Waiting for pending navigations...
+[1618572590.134][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.134][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572590.137][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572590.137][INFO]: Waiting for pending navigations...
+[1618572590.137][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.141][INFO]: Waiting for pending navigations...
+[1618572590.142][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.142][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572590.158][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572590.158][INFO]: Waiting for pending navigations...
+[1618572590.159][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.164][INFO]: Waiting for pending navigations...
+[1618572590.164][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.164][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572590.376][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572590.376][INFO]: Waiting for pending navigations...
+[1618572590.377][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.381][INFO]: Waiting for pending navigations...
+[1618572590.382][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.382][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572590.386][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572590.386][INFO]: Waiting for pending navigations...
+[1618572590.387][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.390][INFO]: Waiting for pending navigations...
+[1618572590.391][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.391][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572590.408][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572590.408][INFO]: Waiting for pending navigations...
+[1618572590.421][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.427][INFO]: Waiting for pending navigations...
+[1618572590.427][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.427][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572590.641][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572590.641][INFO]: Waiting for pending navigations...
+[1618572590.642][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.646][INFO]: Waiting for pending navigations...
+[1618572590.646][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.646][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572590.649][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572590.649][INFO]: Waiting for pending navigations...
+[1618572590.649][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.653][INFO]: Waiting for pending navigations...
+[1618572590.653][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.653][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572590.656][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572590.656][INFO]: Waiting for pending navigations...
+[1618572590.656][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.660][INFO]: Waiting for pending navigations...
+[1618572590.661][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.661][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572590.864][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572590.864][INFO]: Waiting for pending navigations...
+[1618572590.865][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.869][INFO]: Waiting for pending navigations...
+[1618572590.869][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.870][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572590.871][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572590.871][INFO]: Waiting for pending navigations...
+[1618572590.872][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.875][INFO]: Waiting for pending navigations...
+[1618572590.876][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.876][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572590.879][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572590.879][INFO]: Waiting for pending navigations...
+[1618572590.880][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.886][INFO]: Waiting for pending navigations...
+[1618572590.886][INFO]: Done waiting for pending navigations. Status: ok
+[1618572590.886][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572591.089][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572591.089][INFO]: Waiting for pending navigations...
+[1618572591.090][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.093][INFO]: Waiting for pending navigations...
+[1618572591.094][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.094][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572591.096][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572591.096][INFO]: Waiting for pending navigations...
+[1618572591.096][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.100][INFO]: Waiting for pending navigations...
+[1618572591.101][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.101][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572591.104][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572591.104][INFO]: Waiting for pending navigations...
+[1618572591.105][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.110][INFO]: Waiting for pending navigations...
+[1618572591.110][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.110][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572591.314][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572591.314][INFO]: Waiting for pending navigations...
+[1618572591.315][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.319][INFO]: Waiting for pending navigations...
+[1618572591.320][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.320][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572591.321][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572591.321][INFO]: Waiting for pending navigations...
+[1618572591.322][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.325][INFO]: Waiting for pending navigations...
+[1618572591.326][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.326][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572591.329][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572591.329][INFO]: Waiting for pending navigations...
+[1618572591.329][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.334][INFO]: Waiting for pending navigations...
+[1618572591.334][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.334][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572591.537][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572591.537][INFO]: Waiting for pending navigations...
+[1618572591.538][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.542][INFO]: Waiting for pending navigations...
+[1618572591.543][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.543][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572591.544][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572591.544][INFO]: Waiting for pending navigations...
+[1618572591.545][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.549][INFO]: Waiting for pending navigations...
+[1618572591.549][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.549][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572591.555][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572591.555][INFO]: Waiting for pending navigations...
+[1618572591.556][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.561][INFO]: Waiting for pending navigations...
+[1618572591.562][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.562][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572591.782][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572591.782][INFO]: Waiting for pending navigations...
+[1618572591.783][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.787][INFO]: Waiting for pending navigations...
+[1618572591.788][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.788][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572591.789][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572591.789][INFO]: Waiting for pending navigations...
+[1618572591.790][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.793][INFO]: Waiting for pending navigations...
+[1618572591.794][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.794][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572591.798][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572591.798][INFO]: Waiting for pending navigations...
+[1618572591.799][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.803][INFO]: Waiting for pending navigations...
+[1618572591.803][INFO]: Done waiting for pending navigations. Status: ok
+[1618572591.803][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572592.016][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572592.016][INFO]: Waiting for pending navigations...
+[1618572592.018][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.021][INFO]: Waiting for pending navigations...
+[1618572592.022][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.022][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572592.023][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572592.023][INFO]: Waiting for pending navigations...
+[1618572592.024][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.027][INFO]: Waiting for pending navigations...
+[1618572592.028][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.028][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572592.032][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572592.032][INFO]: Waiting for pending navigations...
+[1618572592.033][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.037][INFO]: Waiting for pending navigations...
+[1618572592.038][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.038][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572592.250][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572592.250][INFO]: Waiting for pending navigations...
+[1618572592.252][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.256][INFO]: Waiting for pending navigations...
+[1618572592.257][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.257][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572592.259][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572592.259][INFO]: Waiting for pending navigations...
+[1618572592.260][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.264][INFO]: Waiting for pending navigations...
+[1618572592.264][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.264][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572592.287][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572592.288][INFO]: Waiting for pending navigations...
+[1618572592.289][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.294][INFO]: Waiting for pending navigations...
+[1618572592.294][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.294][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572592.500][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572592.500][INFO]: Waiting for pending navigations...
+[1618572592.501][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.505][INFO]: Waiting for pending navigations...
+[1618572592.506][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.506][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572592.508][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572592.508][INFO]: Waiting for pending navigations...
+[1618572592.508][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.512][INFO]: Waiting for pending navigations...
+[1618572592.512][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.512][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572592.531][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572592.531][INFO]: Waiting for pending navigations...
+[1618572592.532][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.537][INFO]: Waiting for pending navigations...
+[1618572592.538][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.538][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572592.749][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572592.749][INFO]: Waiting for pending navigations...
+[1618572592.751][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.755][INFO]: Waiting for pending navigations...
+[1618572592.755][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.755][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572592.757][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572592.757][INFO]: Waiting for pending navigations...
+[1618572592.757][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.761][INFO]: Waiting for pending navigations...
+[1618572592.761][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.761][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572592.765][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572592.765][INFO]: Waiting for pending navigations...
+[1618572592.765][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.771][INFO]: Waiting for pending navigations...
+[1618572592.771][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.771][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572592.984][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572592.984][INFO]: Waiting for pending navigations...
+[1618572592.985][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.988][INFO]: Waiting for pending navigations...
+[1618572592.989][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.989][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572592.991][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572592.991][INFO]: Waiting for pending navigations...
+[1618572592.991][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.995][INFO]: Waiting for pending navigations...
+[1618572592.995][INFO]: Done waiting for pending navigations. Status: ok
+[1618572592.995][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572593.000][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572593.000][INFO]: Waiting for pending navigations...
+[1618572593.001][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.006][INFO]: Waiting for pending navigations...
+[1618572593.007][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.007][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572593.218][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572593.218][INFO]: Waiting for pending navigations...
+[1618572593.219][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.222][INFO]: Waiting for pending navigations...
+[1618572593.223][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.223][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572593.225][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572593.225][INFO]: Waiting for pending navigations...
+[1618572593.225][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.229][INFO]: Waiting for pending navigations...
+[1618572593.230][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.231][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572593.249][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572593.249][INFO]: Waiting for pending navigations...
+[1618572593.250][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.255][INFO]: Waiting for pending navigations...
+[1618572593.255][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.255][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572593.467][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572593.467][INFO]: Waiting for pending navigations...
+[1618572593.468][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.472][INFO]: Waiting for pending navigations...
+[1618572593.472][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.472][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572593.474][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572593.474][INFO]: Waiting for pending navigations...
+[1618572593.475][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.479][INFO]: Waiting for pending navigations...
+[1618572593.479][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.479][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572593.483][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572593.483][INFO]: Waiting for pending navigations...
+[1618572593.483][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.487][INFO]: Waiting for pending navigations...
+[1618572593.488][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.488][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572593.701][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#uploadPicture"
+}
+[1618572593.701][INFO]: Waiting for pending navigations...
+[1618572593.702][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.706][INFO]: Waiting for pending navigations...
+[1618572593.707][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.708][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE FindElement {
+   "ELEMENT": "0.08552425667533825-13"
+}
+[1618572593.710][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND IsElementDisplayed {
+   "id": "0.08552425667533825-13"
+}
+[1618572593.710][INFO]: Waiting for pending navigations...
+[1618572593.711][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.715][INFO]: Waiting for pending navigations...
+[1618572593.715][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.715][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE IsElementDisplayed true
+[1618572593.732][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND ClickElement {
+   "id": "0.08552425667533825-13"
+}
+[1618572593.732][INFO]: Waiting for pending navigations...
+[1618572593.734][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.739][INFO]: Waiting for pending navigations...
+[1618572593.740][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.740][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE ClickElement ERROR invalid argument
+  (Session info: chrome=89.0.4389.114)
+[1618572593.992][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND GetSource {
+
+}
+[1618572593.992][INFO]: Waiting for pending navigations...
+[1618572593.993][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.998][INFO]: Waiting for pending navigations...
+[1618572593.999][INFO]: Done waiting for pending navigations. Status: ok
+[1618572593.999][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE GetSource "\u003Chtml>\u003Chead>\u003Cmeta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\u003Cscript type=\"text/javascript\" async=\"\" src=\"https://www.google-analytics.com/analytics.js\">\u003C/script>\u003Cscript type=\"tex..."
+[1618572594.009][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND Screenshot {
+
+}
+[1618572594.009][INFO]: Waiting for pending navigations...
+[1618572594.010][INFO]: Done waiting for pending navigations. Status: ok
+[1618572594.537][INFO]: Waiting for pending navigations...
+[1618572594.539][INFO]: Done waiting for pending navigations. Status: ok
+[1618572594.539][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABSQAAAKHCAYAAACYQEazAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3Xl8VHWe7//XOafWVCob2dhDWBRQgoiCS6u4gAK2ot1qz+07dnOdZq63u+/93Z7uuc787MtoL7922pmedn5OO9ehZ+bRo7atTS+KiAsKoggIIosQIASSANm3S..."
+[1618572594.762][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] COMMAND Quit {
+
+}
+[1618572594.801][INFO]: [895a228ed77b5d1708d6f0e03bece9ef] RESPONSE Quit

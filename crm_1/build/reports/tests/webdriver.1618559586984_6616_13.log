@@ -1,0 +1,396 @@
+[1618559587.410][INFO]: Starting OperaDriver 89.0.4389.82 (8d785cc4e2b89bff35f6a21710215271fb8fd782-refs/branch-heads/4389@{#1433}) on port 17266
+[1618559587.410][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping OperaDriver safe.
+[1618559587.838][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "operablink",
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "operablink",
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "operaOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1618559587.840][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1618559587.841][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1618559587.842][INFO]: Launching opera: "C:\Users\admin\AppData\Local\Programs\Opera\75.0.3969.171\opera.exe" --allow-elevated-browser --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-presto-profile-migration --disable-prompt-on-repost --disable-sync --disable-update --disable-usage-statistics-question --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-default-browser-check --no-first-run --no-service-autorun --password-store=basic --ran-launcher --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\admin\AppData\Local\Temp\scoped_dir3336_569275926" data:,
+[1618559589.750][INFO]: resolved localhost to ["127.0.0.1"]
+[1618559589.930][INFO]: resolved localhost to ["127.0.0.1"]
+[1618559590.846][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE InitSession {
+   "acceptInsecureCerts": true,
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "opera",
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "goog:chromeOptions": {
+      "debuggerAddress": "localhost:51833"
+   },
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "opera": {
+      "operadriverVersion": "89.0.4389.82 (8d785cc4e2b89bff35f6a21710215271fb8fd782-refs/branch-heads/4389@{#1433})",
+      "userDataDir": "C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir3336_569275926"
+   },
+   "pageLoadStrategy": "normal",
+   "platform": "Windows",
+   "proxy": {
+
+   },
+   "~~~": "..."
+}
+[1618559591.108][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND SendCommand {
+   "cmd": "Page.setDownloadBehavior",
+   "params": {
+      "behavior": "allow",
+      "downloadPath": "D:\\barancev\\qa_crm\\crm_1\\build\\downloads\\1618559586625_6616_13"
+   }
+}
+[1618559591.108][INFO]: Waiting for pending navigations...
+[1618559591.110][INFO]: Done waiting for pending navigations. Status: ok
+[1618559591.111][INFO]: Waiting for pending navigations...
+[1618559591.112][INFO]: Done waiting for pending navigations. Status: ok
+[1618559591.112][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE SendCommand
+[1618559591.147][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND SetWindowSize {
+   "handle": "current",
+   "height": 768,
+   "width": 1366,
+   "windowHandle": "current"
+}
+[1618559591.311][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE SetWindowSize
+[1618559591.338][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND SetTimeouts {
+   "ms": 30000,
+   "type": "page load"
+}
+[1618559591.338][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE SetTimeouts
+[1618559591.366][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND Navigate {
+   "url": "https://demoqa.com/automation-practice-form"
+}
+[1618559591.366][INFO]: Waiting for pending navigations...
+[1618559591.373][INFO]: Done waiting for pending navigations. Status: ok
+[1618559592.705][INFO]: Waiting for pending navigations...
+[1618559595.151][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.151][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE Navigate
+[1618559595.226][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#firstName"
+}
+[1618559595.226][INFO]: Waiting for pending navigations...
+[1618559595.228][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.237][INFO]: Waiting for pending navigations...
+[1618559595.237][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.237][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE FindElement {
+   "ELEMENT": "0.10510682592950538-1"
+}
+[1618559595.240][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND IsElementDisplayed {
+   "id": "0.10510682592950538-1"
+}
+[1618559595.240][INFO]: Waiting for pending navigations...
+[1618559595.241][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.251][INFO]: Waiting for pending navigations...
+[1618559595.252][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.252][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE IsElementDisplayed true
+[1618559595.256][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND ClearElement {
+   "id": "0.10510682592950538-1"
+}
+[1618559595.256][INFO]: Waiting for pending navigations...
+[1618559595.256][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.274][INFO]: 
+	=== NOTE: ===
+	The Clear command in OperaDriver 2.43 and above
+	has been updated to conform to the current standard,
+	including raising blur event after clearing.
+
+[1618559595.282][INFO]: Waiting for pending navigations...
+[1618559595.283][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.283][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE ClearElement
+[1618559595.288][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND TypeElement {
+   "id": "0.10510682592950538-1",
+   "value": [ "First Name" ]
+}
+[1618559595.288][INFO]: Waiting for pending navigations...
+[1618559595.288][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.340][INFO]: Waiting for pending navigations...
+[1618559595.352][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.352][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE TypeElement
+[1618559595.359][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#lastName"
+}
+[1618559595.359][INFO]: Waiting for pending navigations...
+[1618559595.360][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.367][INFO]: Waiting for pending navigations...
+[1618559595.367][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.367][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE FindElement {
+   "ELEMENT": "0.10510682592950538-3"
+}
+[1618559595.369][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND IsElementDisplayed {
+   "id": "0.10510682592950538-3"
+}
+[1618559595.369][INFO]: Waiting for pending navigations...
+[1618559595.370][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.379][INFO]: Waiting for pending navigations...
+[1618559595.382][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.382][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE IsElementDisplayed true
+[1618559595.386][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND ClearElement {
+   "id": "0.10510682592950538-3"
+}
+[1618559595.386][INFO]: Waiting for pending navigations...
+[1618559595.386][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.418][INFO]: Waiting for pending navigations...
+[1618559595.419][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.419][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE ClearElement
+[1618559595.422][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND TypeElement {
+   "id": "0.10510682592950538-3",
+   "value": [ "Last Name" ]
+}
+[1618559595.422][INFO]: Waiting for pending navigations...
+[1618559595.423][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.471][INFO]: Waiting for pending navigations...
+[1618559595.476][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.476][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE TypeElement
+[1618559595.480][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#userEmail"
+}
+[1618559595.480][INFO]: Waiting for pending navigations...
+[1618559595.480][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.488][INFO]: Waiting for pending navigations...
+[1618559595.489][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.489][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE FindElement {
+   "ELEMENT": "0.10510682592950538-4"
+}
+[1618559595.493][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND IsElementDisplayed {
+   "id": "0.10510682592950538-4"
+}
+[1618559595.493][INFO]: Waiting for pending navigations...
+[1618559595.493][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.501][INFO]: Waiting for pending navigations...
+[1618559595.501][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.501][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE IsElementDisplayed true
+[1618559595.505][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND ClearElement {
+   "id": "0.10510682592950538-4"
+}
+[1618559595.505][INFO]: Waiting for pending navigations...
+[1618559595.505][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.534][INFO]: Waiting for pending navigations...
+[1618559595.535][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.535][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE ClearElement
+[1618559595.545][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND TypeElement {
+   "id": "0.10510682592950538-4",
+   "value": [ "name@gmail.com" ]
+}
+[1618559595.545][INFO]: Waiting for pending navigations...
+[1618559595.546][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.634][INFO]: Waiting for pending navigations...
+[1618559595.635][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.635][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE TypeElement
+[1618559595.644][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'][value='Male']"
+}
+[1618559595.644][INFO]: Waiting for pending navigations...
+[1618559595.645][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.652][INFO]: Waiting for pending navigations...
+[1618559595.653][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.653][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE FindElement {
+   "ELEMENT": "0.10510682592950538-5"
+}
+[1618559595.657][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND IsElementDisplayed {
+   "id": "0.10510682592950538-5"
+}
+[1618559595.657][INFO]: Waiting for pending navigations...
+[1618559595.662][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.675][INFO]: Waiting for pending navigations...
+[1618559595.680][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.680][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE IsElementDisplayed false
+[1618559595.689][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND GetElementCSSProperty {
+   "id": "0.10510682592950538-5",
+   "propertyName": "opacity"
+}
+[1618559595.689][INFO]: Waiting for pending navigations...
+[1618559595.701][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.746][INFO]: Waiting for pending navigations...
+[1618559595.753][INFO]: Done waiting for pending navigations. Status: ok
+[1618559595.758][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE GetElementCSSProperty "0"
+[1618559595.772][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND ClickElement {
+   "id": "0.10510682592950538-5"
+}
+[1618559595.772][INFO]: Waiting for pending navigations...
+[1618559595.780][INFO]: Done waiting for pending navigations. Status: ok
+[1618559596.917][INFO]: Waiting for pending navigations...
+[1618559596.918][INFO]: Done waiting for pending navigations. Status: ok
+[1618559596.918][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE ClickElement ERROR element click intercepted: Element <input name="gender" required="" type="radio" id="gender-radio-1" class="custom-control-input" value="Male"> is not clickable at point (513, 370). Other element would receive the click: <label title="" for="gender-radio-1" class="custom-control-label">...</label>
+  (Session info: chrome=89.0.4389.114)
+[1618559597.120][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'][value='Male']"
+}
+[1618559597.120][INFO]: Waiting for pending navigations...
+[1618559597.121][INFO]: Done waiting for pending navigations. Status: ok
+[1618559597.124][INFO]: Waiting for pending navigations...
+[1618559597.125][INFO]: Done waiting for pending navigations. Status: ok
+[1618559597.125][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE FindElement {
+   "ELEMENT": "0.10510682592950538-5"
+}
+[1618559597.129][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND IsElementDisplayed {
+   "id": "0.10510682592950538-5"
+}
+[1618559597.129][INFO]: Waiting for pending navigations...
+[1618559597.130][INFO]: Done waiting for pending navigations. Status: ok
+[1618559597.133][INFO]: Waiting for pending navigations...
+[1618559597.134][INFO]: Done waiting for pending navigations. Status: ok
+[1618559597.134][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE IsElementDisplayed false
+[1618559597.137][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND GetElementCSSProperty {
+   "id": "0.10510682592950538-5",
+   "propertyName": "opacity"
+}
+[1618559597.137][INFO]: Waiting for pending navigations...
+[1618559597.138][INFO]: Done waiting for pending navigations. Status: ok
+[1618559597.143][INFO]: Waiting for pending navigations...
+[1618559597.144][INFO]: Done waiting for pending navigations. Status: ok
+[1618559597.144][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE GetElementCSSProperty "0"
+[1618559597.151][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND ClickElement {
+   "id": "0.10510682592950538-5"
+}
+[1618559597.151][INFO]: Waiting for pending navigations...
+[1618559597.152][INFO]: Done waiting for pending navigations. Status: ok
+[1618559598.177][INFO]: Waiting for pending navigations...
+[1618559598.177][INFO]: Done waiting for pending navigations. Status: ok
+[1618559598.177][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE ClickElement ERROR element click intercepted: Element <input name="gender" required="" type="radio" id="gender-radio-1" class="custom-control-input" value="Male"> is not clickable at point (513, 370). Other element would receive the click: <label title="" for="gender-radio-1" class="custom-control-label">...</label>
+  (Session info: chrome=89.0.4389.114)
+[1618559598.402][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'][value='Male']"
+}
+[1618559598.402][INFO]: Waiting for pending navigations...
+[1618559598.403][INFO]: Done waiting for pending navigations. Status: ok
+[1618559598.406][INFO]: Waiting for pending navigations...
+[1618559598.407][INFO]: Done waiting for pending navigations. Status: ok
+[1618559598.407][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE FindElement {
+   "ELEMENT": "0.10510682592950538-5"
+}
+[1618559598.409][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND IsElementDisplayed {
+   "id": "0.10510682592950538-5"
+}
+[1618559598.409][INFO]: Waiting for pending navigations...
+[1618559598.410][INFO]: Done waiting for pending navigations. Status: ok
+[1618559598.413][INFO]: Waiting for pending navigations...
+[1618559598.413][INFO]: Done waiting for pending navigations. Status: ok
+[1618559598.413][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE IsElementDisplayed false
+[1618559598.417][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND GetElementCSSProperty {
+   "id": "0.10510682592950538-5",
+   "propertyName": "opacity"
+}
+[1618559598.417][INFO]: Waiting for pending navigations...
+[1618559598.417][INFO]: Done waiting for pending navigations. Status: ok
+[1618559598.421][INFO]: Waiting for pending navigations...
+[1618559598.422][INFO]: Done waiting for pending navigations. Status: ok
+[1618559598.422][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE GetElementCSSProperty "0"
+[1618559598.433][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND ClickElement {
+   "id": "0.10510682592950538-5"
+}
+[1618559598.433][INFO]: Waiting for pending navigations...
+[1618559598.434][INFO]: Done waiting for pending navigations. Status: ok
+[1618559599.509][INFO]: Waiting for pending navigations...
+[1618559599.510][INFO]: Done waiting for pending navigations. Status: ok
+[1618559599.510][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE ClickElement ERROR element click intercepted: Element <input name="gender" required="" type="radio" id="gender-radio-1" class="custom-control-input" value="Male"> is not clickable at point (513, 370). Other element would receive the click: <label title="" for="gender-radio-1" class="custom-control-label">...</label>
+  (Session info: chrome=89.0.4389.114)
+[1618559599.727][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND GetSource {
+
+}
+[1618559599.727][INFO]: Waiting for pending navigations...
+[1618559599.728][INFO]: Done waiting for pending navigations. Status: ok
+[1618559599.732][INFO]: Waiting for pending navigations...
+[1618559599.733][INFO]: Done waiting for pending navigations. Status: ok
+[1618559599.733][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE GetSource "\u003Chtml>\u003Chead>\u003Cmeta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\u003Cscript type=\"text/javascript\" async=\"\" src=\"https://www.gstatic.com/recaptcha/releases/mrdLhN7MywkJAAbzddTIjTaM/recap..."
+[1618559599.745][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND Screenshot {
+
+}
+[1618559599.745][INFO]: Waiting for pending navigations...
+[1618559599.746][INFO]: Done waiting for pending navigations. Status: ok
+[1618559600.053][INFO]: Waiting for pending navigations...
+[1618559600.054][INFO]: Done waiting for pending navigations. Status: ok
+[1618559600.054][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABSQAAAKHCAYAAACYQEazAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXuwJVV99/1Za3X33ucyZ4a5ICDeEETFiqBExBgpbzFiUEMSE6SMeeObkCpTyZtSg0TNayqmHpMqEzWxiliRmOdBMd5fNfh4AxX18QIyQRRFroJcB+Z2ztl7d..."
+[1618559600.257][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] COMMAND Quit {
+
+}
+[1618559600.752][INFO]: [64f3c649f70a7abfac6a8ad7e31754cb] RESPONSE Quit

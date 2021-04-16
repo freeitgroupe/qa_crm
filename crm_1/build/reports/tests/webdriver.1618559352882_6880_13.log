@@ -1,0 +1,425 @@
+[1618559354.035][INFO]: Starting OperaDriver 89.0.4389.82 (8d785cc4e2b89bff35f6a21710215271fb8fd782-refs/branch-heads/4389@{#1433}) on port 17736
+[1618559354.035][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping OperaDriver safe.
+[1618559354.792][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "operablink",
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "operablink",
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "operaOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1618559354.807][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1618559354.807][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1618559354.809][INFO]: Launching opera: "C:\Users\admin\AppData\Local\Programs\Opera\75.0.3969.171\opera.exe" --allow-elevated-browser --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-presto-profile-migration --disable-prompt-on-repost --disable-sync --disable-update --disable-usage-statistics-question --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-default-browser-check --no-first-run --no-service-autorun --password-store=basic --ran-launcher --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\admin\AppData\Local\Temp\scoped_dir4776_47783682" data:,
+[1618559365.933][INFO]: resolved localhost to ["127.0.0.1"]
+[1618559367.279][INFO]: resolved localhost to ["127.0.0.1"]
+[1618559367.345][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE InitSession {
+   "acceptInsecureCerts": true,
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "opera",
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "goog:chromeOptions": {
+      "debuggerAddress": "localhost:51482"
+   },
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "opera": {
+      "operadriverVersion": "89.0.4389.82 (8d785cc4e2b89bff35f6a21710215271fb8fd782-refs/branch-heads/4389@{#1433})",
+      "userDataDir": "C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir4776_47783682"
+   },
+   "pageLoadStrategy": "normal",
+   "platform": "Windows",
+   "proxy": {
+
+   },
+   "~~~": "..."
+}
+[1618559369.907][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND SendCommand {
+   "cmd": "Page.setDownloadBehavior",
+   "params": {
+      "behavior": "allow",
+      "downloadPath": "D:\\barancev\\qa_crm\\crm_1\\build\\downloads\\1618559350551_6880_13"
+   }
+}
+[1618559369.907][INFO]: Waiting for pending navigations...
+[1618559373.726][INFO]: Done waiting for pending navigations. Status: ok
+[1618559373.829][INFO]: Waiting for pending navigations...
+[1618559373.830][INFO]: Done waiting for pending navigations. Status: ok
+[1618559373.830][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE SendCommand
+[1618559374.164][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND SetWindowSize {
+   "handle": "current",
+   "height": 768,
+   "width": 1366,
+   "windowHandle": "current"
+}
+[1618559374.300][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE SetWindowSize
+[1618559374.306][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND SetTimeouts {
+   "ms": 30000,
+   "type": "page load"
+}
+[1618559374.306][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE SetTimeouts
+[1618559374.314][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND Navigate {
+   "url": "https://demoqa.com/automation-practice-form"
+}
+[1618559374.314][INFO]: Waiting for pending navigations...
+[1618559374.315][INFO]: Done waiting for pending navigations. Status: ok
+[1618559377.298][INFO]: Waiting for pending navigations...
+[1618559378.644][INFO]: Done waiting for pending navigations. Status: ok
+[1618559378.644][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE Navigate
+[1618559378.716][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#firstName"
+}
+[1618559378.716][INFO]: Waiting for pending navigations...
+[1618559378.717][INFO]: Done waiting for pending navigations. Status: ok
+[1618559378.860][INFO]: Waiting for pending navigations...
+[1618559378.861][INFO]: Done waiting for pending navigations. Status: ok
+[1618559378.861][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement {
+   "ELEMENT": "0.04295089728712087-1"
+}
+[1618559378.864][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND IsElementDisplayed {
+   "id": "0.04295089728712087-1"
+}
+[1618559378.865][INFO]: Waiting for pending navigations...
+[1618559378.866][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.014][INFO]: Waiting for pending navigations...
+[1618559379.014][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.014][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE IsElementDisplayed true
+[1618559379.017][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND ClearElement {
+   "id": "0.04295089728712087-1"
+}
+[1618559379.017][INFO]: Waiting for pending navigations...
+[1618559379.018][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.035][INFO]: 
+	=== NOTE: ===
+	The Clear command in OperaDriver 2.43 and above
+	has been updated to conform to the current standard,
+	including raising blur event after clearing.
+
+[1618559379.044][INFO]: Waiting for pending navigations...
+[1618559379.044][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.044][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE ClearElement
+[1618559379.049][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND TypeElement {
+   "id": "0.04295089728712087-1",
+   "value": [ "First Name" ]
+}
+[1618559379.049][INFO]: Waiting for pending navigations...
+[1618559379.050][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.216][INFO]: Waiting for pending navigations...
+[1618559379.242][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.242][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE TypeElement
+[1618559379.247][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#lastName"
+}
+[1618559379.247][INFO]: Waiting for pending navigations...
+[1618559379.248][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.256][INFO]: Waiting for pending navigations...
+[1618559379.259][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.259][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement {
+   "ELEMENT": "0.04295089728712087-3"
+}
+[1618559379.261][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND IsElementDisplayed {
+   "id": "0.04295089728712087-3"
+}
+[1618559379.261][INFO]: Waiting for pending navigations...
+[1618559379.262][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.270][INFO]: Waiting for pending navigations...
+[1618559379.273][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.273][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE IsElementDisplayed true
+[1618559379.277][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND ClearElement {
+   "id": "0.04295089728712087-3"
+}
+[1618559379.277][INFO]: Waiting for pending navigations...
+[1618559379.277][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.307][INFO]: Waiting for pending navigations...
+[1618559379.308][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.308][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE ClearElement
+[1618559379.312][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND TypeElement {
+   "id": "0.04295089728712087-3",
+   "value": [ "Last Name" ]
+}
+[1618559379.312][INFO]: Waiting for pending navigations...
+[1618559379.313][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.362][INFO]: Waiting for pending navigations...
+[1618559379.365][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.365][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE TypeElement
+[1618559379.370][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#userEmail"
+}
+[1618559379.370][INFO]: Waiting for pending navigations...
+[1618559379.373][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.382][INFO]: Waiting for pending navigations...
+[1618559379.382][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.382][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement {
+   "ELEMENT": "0.04295089728712087-4"
+}
+[1618559379.385][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND IsElementDisplayed {
+   "id": "0.04295089728712087-4"
+}
+[1618559379.385][INFO]: Waiting for pending navigations...
+[1618559379.385][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.395][INFO]: Waiting for pending navigations...
+[1618559379.396][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.396][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE IsElementDisplayed true
+[1618559379.400][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND ClearElement {
+   "id": "0.04295089728712087-4"
+}
+[1618559379.400][INFO]: Waiting for pending navigations...
+[1618559379.400][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.428][INFO]: Waiting for pending navigations...
+[1618559379.428][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.428][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE ClearElement
+[1618559379.432][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND TypeElement {
+   "id": "0.04295089728712087-4",
+   "value": [ "name@gmail.com" ]
+}
+[1618559379.432][INFO]: Waiting for pending navigations...
+[1618559379.432][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.487][INFO]: Waiting for pending navigations...
+[1618559379.491][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.491][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE TypeElement
+[1618559379.494][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559379.494][INFO]: Waiting for pending navigations...
+[1618559379.495][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.502][INFO]: Waiting for pending navigations...
+[1618559379.502][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.502][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559379.736][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559379.736][INFO]: Waiting for pending navigations...
+[1618559379.737][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.741][INFO]: Waiting for pending navigations...
+[1618559379.742][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.742][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559379.954][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559379.954][INFO]: Waiting for pending navigations...
+[1618559379.955][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.960][INFO]: Waiting for pending navigations...
+[1618559379.960][INFO]: Done waiting for pending navigations. Status: ok
+[1618559379.960][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559380.181][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559380.181][INFO]: Waiting for pending navigations...
+[1618559380.183][INFO]: Done waiting for pending navigations. Status: ok
+[1618559380.186][INFO]: Waiting for pending navigations...
+[1618559380.187][INFO]: Done waiting for pending navigations. Status: ok
+[1618559380.187][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559380.400][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559380.400][INFO]: Waiting for pending navigations...
+[1618559380.401][INFO]: Done waiting for pending navigations. Status: ok
+[1618559380.406][INFO]: Waiting for pending navigations...
+[1618559380.406][INFO]: Done waiting for pending navigations. Status: ok
+[1618559380.406][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559380.611][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559380.611][INFO]: Waiting for pending navigations...
+[1618559380.612][INFO]: Done waiting for pending navigations. Status: ok
+[1618559380.616][INFO]: Waiting for pending navigations...
+[1618559380.616][INFO]: Done waiting for pending navigations. Status: ok
+[1618559380.616][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559380.821][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559380.821][INFO]: Waiting for pending navigations...
+[1618559380.822][INFO]: Done waiting for pending navigations. Status: ok
+[1618559380.826][INFO]: Waiting for pending navigations...
+[1618559380.826][INFO]: Done waiting for pending navigations. Status: ok
+[1618559380.826][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559381.030][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559381.030][INFO]: Waiting for pending navigations...
+[1618559381.032][INFO]: Done waiting for pending navigations. Status: ok
+[1618559381.037][INFO]: Waiting for pending navigations...
+[1618559381.037][INFO]: Done waiting for pending navigations. Status: ok
+[1618559381.037][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559381.244][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559381.244][INFO]: Waiting for pending navigations...
+[1618559381.245][INFO]: Done waiting for pending navigations. Status: ok
+[1618559381.249][INFO]: Waiting for pending navigations...
+[1618559381.251][INFO]: Done waiting for pending navigations. Status: ok
+[1618559381.251][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559381.476][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559381.476][INFO]: Waiting for pending navigations...
+[1618559381.477][INFO]: Done waiting for pending navigations. Status: ok
+[1618559381.482][INFO]: Waiting for pending navigations...
+[1618559381.483][INFO]: Done waiting for pending navigations. Status: ok
+[1618559381.483][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559381.702][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559381.702][INFO]: Waiting for pending navigations...
+[1618559381.703][INFO]: Done waiting for pending navigations. Status: ok
+[1618559381.707][INFO]: Waiting for pending navigations...
+[1618559381.707][INFO]: Done waiting for pending navigations. Status: ok
+[1618559381.707][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559381.930][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559381.930][INFO]: Waiting for pending navigations...
+[1618559381.931][INFO]: Done waiting for pending navigations. Status: ok
+[1618559381.935][INFO]: Waiting for pending navigations...
+[1618559381.936][INFO]: Done waiting for pending navigations. Status: ok
+[1618559381.936][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559382.159][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559382.159][INFO]: Waiting for pending navigations...
+[1618559382.160][INFO]: Done waiting for pending navigations. Status: ok
+[1618559382.165][INFO]: Waiting for pending navigations...
+[1618559382.165][INFO]: Done waiting for pending navigations. Status: ok
+[1618559382.165][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559382.388][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='gender'] [value='male']"
+}
+[1618559382.388][INFO]: Waiting for pending navigations...
+[1618559383.377][INFO]: Done waiting for pending navigations. Status: ok
+[1618559383.382][INFO]: Waiting for pending navigations...
+[1618559383.382][INFO]: Done waiting for pending navigations. Status: ok
+[1618559383.382][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"input[name='gender'] [value='male']"}
+  (Session info: chrome=89.0.4389.114)
+[1618559383.588][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND GetSource {
+
+}
+[1618559383.588][INFO]: Waiting for pending navigations...
+[1618559383.589][INFO]: Done waiting for pending navigations. Status: ok
+[1618559383.594][INFO]: Waiting for pending navigations...
+[1618559383.594][INFO]: Done waiting for pending navigations. Status: ok
+[1618559383.594][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE GetSource "\u003Chtml>\u003Chead>\u003Cmeta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\u003Cscript type=\"text/javascript\" async=\"\" src=\"https://www.google-analytics.com/analytics.js\">\u003C/script>\u003Cscript type=\"tex..."
+[1618559383.683][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND Screenshot {
+
+}
+[1618559383.683][INFO]: Waiting for pending navigations...
+[1618559383.683][INFO]: Done waiting for pending navigations. Status: ok
+[1618559383.995][INFO]: Waiting for pending navigations...
+[1618559383.996][INFO]: Done waiting for pending navigations. Status: ok
+[1618559383.996][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABSQAAAKHCAYAAACYQEazAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXuwJVd93/v5rdW99z5nzjykmRESiKckCxC5EiAjBDYEYxtb4eEoMQ7oOjjxTZQqp5Lrsh1ZsbkhZadCXEVssF2l+BoZV2QLY8BcwCIYhAAB4SVLFsgSD72Q0..."
+[1618559384.149][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] COMMAND Quit {
+
+}
+[1618559384.250][INFO]: [e6b4c2817ca9e8d4181b157b2cd2e97f] RESPONSE Quit
