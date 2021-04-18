@@ -1,18 +1,44 @@
 plugins {
     id 'java'
+    id "io.qameta.allure" version "2.8.1"
 }
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
+compileTestJava{
+    options.encoding = 'UTF-8'
+}
+
+/*dependencies {
     // <group>:<name>:<version>
     testImplementation 'com.codeborne:selenide:5.15.1'
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.6.2"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.6.2"
+}*/
+
+dependencies {
+    compile("com.squareup.retrofit2:retrofit:2.9.0")
+    compile("com.squareup.retrofit2:converter-jackson:2.9.0")
+    compile("com.squareup.okhttp3:logging-interceptor:3.9.0")
+    compile("com.codeborne:selenide:5.11.1")
+    compile("io.qameta.allure:allure-selenide:2.13.6")
+
+    compile("org.junit.jupiter:junit-jupiter-api:5.7.0")
+    compile("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+    compile("org.junit.jupiter:junit-jupiter-params:5.7.0")
+}
+
+allure {
+    autoconfigure = true
+    version = '2.13.9'
+    useJUnit5{
+        version = '2.13.9'
+    }
 }
 
 test {
+    systemProperty "chromeoptions.pref", "intl.accept_languages=en"
     useJUnitPlatform()
 }
