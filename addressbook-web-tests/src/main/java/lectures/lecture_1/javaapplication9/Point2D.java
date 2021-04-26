@@ -1,12 +1,21 @@
 package lectures.lecture_1.javaapplication9;
 
+import oop.graph.Point;
+
 public class Point2D {
     private int x, y;
     private double length; // длина вектора.
+    private static int pointsCounter;
+    private final int pointID; // финальное поле должно быть заданно явно или в конструкторе
+
+    static {
+        System.out.println("Static block");
+    }
 
     public Point2D(){
         // Так как на момент создания конструктора объект размещен в памяти тогда мы можем воспользовться ссылкой this.
         // обращаемся к другому конструктору нашего класса
+        // this может быть вызван только первым в строке
         this(0,0);
     }
 
@@ -21,6 +30,7 @@ public class Point2D {
     public Point2D(int x, int y) {
         setX(x);
         setY(y);
+        pointID = pointsCounter++;
     }
 
     public int getX() {
@@ -49,7 +59,12 @@ public class Point2D {
         sb.append(y);
         sb.append(")");
         return sb.toString();
-        //return "Point2D{" + "x=" + x + ", y=" + y + '}';// так писать нельзя это увелич нагрузку на gc, надо использовать StringBuilder
+        // return "Point2D{" + "x=" + x + ", y=" + y + '}';// так писать нельзя это увелич нагрузку на gc, надо использовать StringBuilder
+    }
+
+    public double distanceTo(Point2D rValue){
+      return  Math.sqrt((this.x - rValue.x) * (this.x - rValue.x) +
+              (this.y - rValue.y) * (this.y - rValue.y));
     }
 
     // Длина радиус вектора
@@ -59,5 +74,13 @@ public class Point2D {
 
     public double getLength() {
         return length;
+    }
+
+    public int getID() {
+        return pointID;
+    }
+
+    public static int getPointsCounter() {
+        return pointsCounter;
     }
 }
