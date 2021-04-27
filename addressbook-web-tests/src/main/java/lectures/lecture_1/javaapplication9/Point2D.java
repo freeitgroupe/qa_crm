@@ -1,6 +1,7 @@
 package lectures.lecture_1.javaapplication9;
 
 import oop.graph.Point;
+import org.omg.PortableServer.POA;
 
 public class Point2D {
     private int x, y;
@@ -65,6 +66,10 @@ public class Point2D {
     public double distanceTo(Point2D rValue){
       return  Math.sqrt((this.x - rValue.x) * (this.x - rValue.x) +
               (this.y - rValue.y) * (this.y - rValue.y));
+    }
+
+    public Point2D addTo(Point2D rValue){
+        return new Point2D(x + rValue.x, y + rValue.y);
     }
 
     // Длина радиус вектора

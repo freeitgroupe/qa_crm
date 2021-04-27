@@ -2,7 +2,7 @@ package lectures.lecture_1.javaapplication9;
 
 public class JavaApplication9 {
     public static void main(String[] args) throws ClassNotFoundException {
-       /* System.out.println(Point2D.getPointsCounter());
+        System.out.println(Point2D.getPointsCounter());
 
         Point2D p1 = new Point2D();
         p1.setX(1);
@@ -15,8 +15,9 @@ public class JavaApplication9 {
 
         System.out.println("Total points " + Point2D.getPointsCounter());
 
-        System.out.println("Distance between = " + p1.distanceTo(p2));*/
+        System.out.println("Distance between = " + p1.distanceTo(p2));
+        System.out.println("Summ 2 points: " + p1.addTo(p2));
 
-       Class.forName("lectures.lecture_1.javaapplication9.Point2D"); // принудительно загружаем класс в оперативную память
+       //Class.forName("lectures.lecture_1.javaapplication9.Point2D"); // принудительно загружаем класс в оперативную память
     }
 }
